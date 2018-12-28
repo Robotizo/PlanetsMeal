@@ -1,0 +1,19 @@
+<%= stylesheet_link_tag "line_items", :media => "all" %>
+<% if line_item == @current_item %>
+<tr id="current_item">
+<% else %>
+<tr>
+<tr>
+<% end %>
+
+<div class="productSec">
+	<div class="imageSide"><%= image_tag(line_item.product.image_url(:thumb), class: "imageProd") %></div>
+	<div class="contentSide">
+		<div class="productTitle"><%= line_item.product.title %></div>
+		<div class="productPriceRen"><%= number_to_currency(line_item.product.price) %></div>
+	</div>
+</div>
+
+
+
+</tr>

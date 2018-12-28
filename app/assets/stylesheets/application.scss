@@ -1,0 +1,187 @@
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, vendor/assets/stylesheets,
+ * or any plugin's vendor/assets/stylesheets directory can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any other CSS/SCSS
+ * files in this directory. Styles in this file should be added after the last require_* statement.
+ * It is generally better to create a new file per style scope.
+ *
+ */
+
+@import "bootstrap-sprockets";
+@import "bootstrap";
+
+
+
+a{
+	text-decoration: none !important;
+}
+
+
+body{
+	font-family: "Century Gothic", CenturyGothic, Geneva, AppleGothic, sans-serif;
+}
+
+li{
+	float: left;
+}
+
+
+.innerFooter{
+	font-size: 26px;
+}
+
+.innerFooterSub{
+	font-size: 20px;
+}
+
+
+.footer{
+	padding: 65px 0 55px;
+    color: #8898aa;
+    line-height: 30px;
+    font-size: 15px;
+    white-space: nowrap;
+    border-top: 1px solid #d2d2d2;
+}
+
+.mainView{
+	margin-top: 70px;
+}
+
+
+.topnav{
+	border-bottom: 1px solid #d2d2d2;
+	background-color: white;
+	
+}
+
+.cartQuantity{
+	color: #a7a7a7 !important;
+	margin-left: 20px;
+}
+
+
+.topElements{
+	margin-top: 10px;
+}
+
+
+.number{
+	font-size: 15px !important;
+    position: relative;
+    top: -15px;
+    right: 23px;
+}
+
+.navbar-brand{
+	font-size: 26px;
+}
+
+.cartInfo{
+	display: inline;
+}
+
+
+.navbar-brand:hover{
+	color: #92c755;
+}
+
+.navbar-collapse.collapse{
+	height: 60px !important;
+}
+
+
+
+.ecoMealTitle{
+	color: #92c755;
+	margin-left: 10px;
+}
+
+
+.ecoMealElements{
+	color: #a7a7a7 !important;
+	margin-left: 10px;
+	 padding: 0px 0px;
+
+}
+
+
+.ecoMealElements2{
+	color: #a7a7a7 !important;
+	margin-left: 10px;
+}
+
+.navOp{
+	font-size: 25px;
+}
+@media (min-width: 768px){
+	.navbar-nav{
+		float: none;
+	}
+}
+.navBarElements{
+	color: black;
+}
+
+@media screen and (max-width: 768px){
+	.navBarElements2{
+		
+	}
+
+	.navBarElements{
+		width: 100%;
+		padding: 10px 120px;
+		color: black;
+	}
+	.navBarElements:hover{
+		width: 100%;
+		padding: 10px 120px;
+		color: white;
+	}
+
+
+	.navbar-collapse.collapse{
+		height: 70px !important;
+	}
+	.navOp{
+		font-size: 20px;
+		text-align: center;
+		width: 100%;
+	}
+
+	.navOp:hover{
+		background-color: #92c755 !important;
+		color: white !important;;
+	}
+	.topStuff{
+		left: 0%;
+	}
+	.navbar-toggle{
+		padding: 4px 10px;
+	}
+	.navbar-toggle .icon-bar{
+		background-color: black;
+	}
+	.mainView {
+    	margin-top: 60px !important;
+	}
+
+	.ecoMealTitle{
+		margin-left: 0px;
+    	font-size: 23px;
+	}
+}
+
+
+
+
+
+
+
+
+

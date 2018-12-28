@@ -1,0 +1,54 @@
+/*// Place all the styles related to the line_items controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/*/
+
+.productPriceRen{
+	font-size: 20px;
+}
+
+.imageProd{
+	width: 150px;
+}
+
+.productSec{
+	border: 1px solid #868686;
+	height: 152px;
+	border-radius: 3px;
+	width: 90%;
+	box-shadow: 0 15px 35px rgba(50, 50, 93, 0.1), 0 5px 15px rgba(0, 0, 0, 0.07);
+	margin-top: 30px;
+}
+
+
+
+.imageSide{
+	float: left;
+}
+
+
+.contentSide{
+	margin-left: 160px;
+	margin-top: 10px;
+}
+
+@media screen and (max-width: 768px){
+	.contentSide{
+		margin-left: 120px;
+	}
+	.productSec {
+	    height: 109px;
+	    border-radius: 3px;
+	    width: 100%;
+	    margin-top: 30px;
+	}
+
+	
+
+	.imageProd {
+		    width: 107px;
+	}
+
+	.productPriceRen {
+    	font-size: 17px;
+	}
+}

@@ -1,0 +1,259 @@
+/*// Place all the styles related to the Carts controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/*/
+
+/*// Place all the styles related to the Products controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/ */
+
+
+
+a {
+  text-decoration: none !important;
+}
+
+
+.note{
+	display: none;
+}
+
+.alert-custom{
+  background-color: #92c755;
+  color:#fff;
+}
+
+
+.productImage{
+	width: 200px;
+	border-right: 1px solid #d2d2d2;
+	border-radius: 3px
+}
+
+
+.imageSide{
+	float: left;
+}
+
+
+.prodBox{
+	border: 1px solid #d2d2d2;
+	height: 201px;
+	border-radius: 3px;
+	margin-top: 30px;
+}
+
+
+.buttonDiv{
+	margin-top: 33px;
+}
+
+
+
+.productTitle{
+	font-size: 20px;
+}
+
+.productPrice{
+	font-size: 18px;
+	margin-bottom: 10px;
+	margin-left: 210px;
+}
+
+
+.productTitleDiv{
+	margin-top: 10px;
+	margin-bottom: 10px;
+	margin-left: 210px;
+}
+
+.productDesc{
+	font-size: 14px;
+	margin-left: 210px;
+}
+
+.innerClassEl{
+	margin-left: 10px;
+}
+
+
+.checkoutSec{
+	margin-bottom: 20px;
+	margin-top: 20px;
+}
+
+.totPrice{
+	font-size: 30px;
+	margin-top: 10px;
+	margin-bottom: 10px;
+}
+
+
+.checkout{
+	background-color: white;
+    color: black;
+    border: 2px solid #4CAF50; 
+    padding: 20px 60px;
+    width: 100%;
+    border-radius: 3px;
+}
+
+.checkout:hover{
+	background-color: #4CAF50; 
+	color: white;
+	-webkit-animation-name: example; /* Safari 4.0 - 8.0 */
+    -webkit-animation-duration: 0.5s; /* Safari 4.0 - 8.0 */
+    animation-name: example;
+    animation-duration: 0.5s;
+}
+
+
+@-webkit-keyframes example {
+    from {background-color: white; color: black;}
+    to {background-color: #4CAF50; color: white;}
+
+}
+
+/* Standard syntax */
+@keyframes example {
+    from {background-color: white; color: black;}
+    to {background-color: #4CAF50; color: white;}
+}
+
+.removeButton{
+	background-color: #4CAF50; /* Green */
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    top: 178px;
+    left: 576px;
+    position: absolute;
+    border-radius: 0px 0px 2px 0px;
+    outline: none;
+}
+
+
+.checkSec{
+	border-right: 1px solid #bdbdbd;
+    padding-bottom: 20px;
+    overflow: scroll;
+    height: 500px;
+}
+
+
+.noProds{
+	margin-top: 40px;
+	font-size: 25px;
+	text-align: center;
+}
+
+
+
+
+.productTitle{
+	font-size: 25px;
+}
+
+.productPrice{
+	font-size: 20px;
+	margin-bottom: 10px;
+	margin-left: 210px;
+}
+
+
+.productTitleDiv{
+	margin-top: 30px;
+	margin-bottom: 10px;
+	margin-left: 210px;
+}
+
+.productDesc{
+	font-size: 15px;
+	margin-left: 210px;
+}
+
+
+
+
+@media screen and (max-width: 768px){
+	.note{
+		display: block;
+	}
+	.smallNote{
+		font-size: 18px;
+    	margin-top: 20px;
+    	text-align: center;
+	}
+	.removeButton {
+	    background-color: #4CAF50;
+	    border: none;
+	    color: white;
+	    padding: 40px 23px;
+	    text-align: center;
+	    text-decoration: none;
+	    display: inline-block;
+	    font-size: 16px;
+	    top: 4%;
+	    left: 103%;
+	    position: absolute;
+	    border-radius: 0px 0px 2px 0px;
+	    outline: none;
+	}
+	.itemsWithin{
+		padding-left: 0px !important;
+		padding-right: 0px !important;
+	}
+	.bottomSec{
+		margin-top: 80px;
+		margin-bottom: 50px;
+	}
+
+	.checkSec{
+		border-right: 0px;
+		padding-bottom: 0px;
+		height: 100%;
+		padding-left: 0px !important;
+		padding-right: 0px !important;
+	}
+
+	.productPrice {
+	    font-size: 16px;
+	    margin-bottom: 10px;
+	    margin-left: 115px;
+	}
+	.productTitleDiv {
+	    margin-top: 5px;
+	    margin-left: 115px;
+	    margin-bottom: 5px;
+	    font-size: 18px;
+	}
+	.productTitle {
+    	font-size: 18px;
+	}
+	.productImage {
+	    width: 109px;
+	    border-right: 1px solid #868686;
+	    border-radius: 2px 0px 0px 2px;
+	}
+	.prodBox {
+	    border: 1px solid #868686;
+	    height: 110px;
+	    border-radius: 3px;
+	    margin: 0px;
+	    margin-top: 20px;
+	    box-shadow: 0 15px 35px rgba(50, 50, 93, 0.1), 0 5px 15px rgba(0, 0, 0, 0.07);
+	    margin-bottom: 20px;
+	}
+}
+
+
+
+
+
+
+
+
+

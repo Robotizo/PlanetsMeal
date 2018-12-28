@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no " />
+<html>
+  <head>
+    <title>Planet's Meal</title>
+    <%= csrf_meta_tags %>
+
+    <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+    <%= favicon_link_tag "favicon.ico" %>
+  </head>
+
+  <body>
+
+    <nav class="navbar topnav navbar-fixed-top">
+      <div class="topElements">
+      <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+        <%= link_to "Planet's Meal", root_path, method: :get, class: "navbar-brand ecoMealTitle" %>
+      </div>
+
+
+    </div>
+
+    </nav>
+
+
+
+
+    
+  	
+
+<div class="mainView">
+    <%= yield %>
+</div>
+  </body>
+</html>

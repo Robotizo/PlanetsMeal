@@ -1,0 +1,53 @@
+<%= stylesheet_link_tag "products", :media => "all" %>
+<p id="notice"><%= notice %></p>
+
+
+<div class="container">
+<div class="text-center">
+  <h1>Products</h1>
+</div>
+<hr>
+
+
+      <% @products.each do |product| %>
+      <div class="col-md-6">
+      <div class="prodBox">
+        <div class="imageSide">
+            <div><%= image_tag(product.image_url(:thumb), class: "productImage") if product.image? %></div>
+        </div>
+        <div class="infoSide">
+            <div class="productTitleDiv"><%= link_to product.title, product, method: :get, class: "productTitle" %></div>
+            <div class="productPrice"><%= number_to_currency(product.price) %></div>
+            <div class="productDesc"><%= product.description %></div>
+        </div>
+      </div>
+      </div>
+      <% end %>
+    
+
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+
+  <%= link_to 'New Product', new_product_path %>
+
+</div>
+
+

@@ -1,0 +1,400 @@
+/*// Place all the styles related to the Orders controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/*/
+
+.liveOrders{
+	background-color: green;
+}
+
+.checkoutButton{
+	font-size: 20px;
+}
+
+.actPrice{
+	margin-bottom: 50px;
+}
+
+
+.boxPrice{
+	margin-top: 20px;
+	font-size: 30px;
+}
+
+.subBoxInfo{
+	margin-left: 10px;
+}
+
+.plusBox{
+	margin-top: 110px;
+	font-size: 30px;
+}
+
+.boxInfo{
+	text-align: center;
+	font-size: 20px;
+}
+
+
+
+.boxProdImgSub{
+	border-radius: 3px;
+	margin-bottom: 10px;
+	border: 1px solid black;
+}
+
+.boxProdImg{
+	width:100%;
+	border-radius: 3px;
+	margin-bottom: 10px;
+	border: 1px solid black;
+}
+
+.box{
+	border: 3px solid #d2d2d2;
+	padding: 20px;
+	margin-bottom: 30px;
+	border-radius: 3px;
+}
+
+
+
+
+.mainTitle{
+	margin-top: 20px;
+	margin-bottom: 20px;
+	font-size: 35px;
+	text-align: center;
+}
+
+
+.alert-custom{
+  background-color: #92c755;
+  color:#fff;
+}
+
+a {
+  text-decoration: none !important;
+}
+
+
+.fontInf{
+	font-size: 30px;
+}
+
+.fontPrice{
+	font-size: 30px;
+	margin-top: 10px;
+}
+
+.fontPriceTot{
+	font-size: 30px;
+	border-bottom: 1px solid #d2d2d2;
+}
+
+
+.fontDate{
+	font-size: 20px;
+}
+
+.priceSec{
+	border-left: 1px solid #d2d2d2;
+	height: 500px;
+
+}
+
+.titleOrder{
+	text-align: center;
+	font-size: 30px;
+	margin-top: 20px;
+}
+
+
+.productSpacing{
+	margin: 20px;
+}
+
+.productSector{
+	margin-top: 50px;
+}
+
+.productImage{
+	width: 200px;
+	border-right: 1px solid #d2d2d2;
+	border-radius: 3px
+}
+
+.checkoutSec{
+	margin-bottom: 20px;
+	margin-top: 40px;
+}
+
+.totPrice{
+	font-size: 30px;
+	margin-top: 10px;
+	margin-bottom: 10px;
+}
+
+
+.checkout{
+	background-color: white;
+    color: black;
+    border: 2px solid #92c755; 
+    padding: 20px 60px;
+    width: 100%;
+    border-radius: 3px;
+}
+
+
+.imageSide{
+	float: left;
+}
+
+
+.prodBox{
+	border: 1px solid #d2d2d2;
+	height: 201px;
+	border-radius: 3px;
+	margin-top: 30px;
+}
+
+
+.buttonDiv{
+	margin-top: 33px;
+}
+
+
+
+.productTitle{
+	font-size: 20px;
+}
+
+.productPrice{
+	font-size: 18px;
+	margin-bottom: 10px;
+	margin-left: 210px;
+}
+
+
+.productTitleDiv{
+	margin-top: 10px;
+	margin-bottom: 10px;
+	margin-left: 210px;
+}
+
+.productDesc{
+	font-size: 14px;
+	margin-left: 210px;
+}
+
+.innerClassEl{
+	margin-left: 10px;
+}
+
+
+.checkoutSec{
+	margin-bottom: 20px;
+	margin-top: 20px;
+}
+
+.totPrice{
+	font-size: 30px;
+	margin-top: 10px;
+	margin-bottom: 10px;
+}
+
+
+.checkout{
+	background-color: white;
+    color: black;
+    border: 2px solid #92c755; 
+    padding: 20px 60px;
+    width: 100%;
+    border-radius: 3px;
+}
+
+.checkout:hover{
+	background-color: #92c755; 
+	color: white;
+	-webkit-animation-name: example; /* Safari 4.0 - 8.0 */
+    -webkit-animation-duration: 0.5s; /* Safari 4.0 - 8.0 */
+    animation-name: example;
+    animation-duration: 0.5s;
+}
+
+
+@-webkit-keyframes example {
+    from {background-color: white; color: black;}
+    to {background-color: #92c755; color: white;}
+
+}
+
+/* Standard syntax */
+@keyframes example {
+    from {background-color: white; color: black;}
+    to {background-color: #92c755; color: white;}
+}
+
+.removeButton{
+	background-color: #4CAF50; /* Green */
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    top: 178px;
+    left: 571px;
+    position: absolute;
+    border-radius: 0px 0px 2px 0px;
+    outline: none;
+}
+
+
+.checkSec{
+	border-right: 1px solid #bdbdbd;
+    padding-bottom: 20px;
+    overflow: scroll;
+    height: 500px;
+}
+
+
+.noProds{
+	margin-top: 40px;
+	font-size: 25px;
+	text-align: center;
+}
+
+
+
+
+.productTitle{
+	font-size: 25px;
+}
+
+.productPrice{
+	font-size: 20px;
+	margin-bottom: 10px;
+	margin-left: 210px;
+}
+
+
+.productTitleDiv{
+	margin-top: 30px;
+	margin-bottom: 10px;
+	margin-left: 210px;
+}
+
+.productDesc{
+	font-size: 15px;
+	margin-left: 210px;
+}
+
+
+.infoSec{
+	margin-top: 00px;
+}
+
+
+@media screen and (max-width: 768px){
+	.infoSec{
+		margin-top: 30px;
+	}
+	.boxTot{
+		border-bottom: 1px solid #797979;
+		margin-top: 20px;
+	}
+	.subBoxInfo{
+		margin-left: 0px;
+		font-size: 15px;
+	}
+	.boxProdImgSub{
+		width: 110px;
+		height: 110px;
+	}
+	.plusBox {
+    	font-size: 30px;
+    	margin-top: 10px;
+    	margin-bottom: 30px;
+	}	
+	.boxProdImg{
+		width: 200px;
+		text-align: center;
+	}
+
+	.sec1{
+		padding-left: 0px;
+		padding-right: 0px;
+	}
+	
+	.fontPrice{
+		font-size: 25px;
+	}
+	.fontPriceTot{
+		font-size: 25px;
+	}
+	.fontInf{
+		font-size: 25px;
+	}
+	.priceSec{
+		border-left: 0px;
+		height: 100%;
+		margin-top: 30px;
+	}
+	.productSpacing{
+		margin: 0px;
+	}
+
+	.orderProds{
+		padding-right: 0px;
+		padding-left: 0px;
+	}
+	.productImage {
+    	width: 109px;
+    	border-right: 1px solid #868686;
+    	border-radius: 2px 0px 0px 2px;
+	}
+
+	.prodBox {
+	    border: 1px solid #868686;
+	    height: 110px;
+	    border-radius: 3px;
+	    margin: 0px;
+	    margin-top: 20px;
+	    box-shadow: 0 15px 35px rgba(50, 50, 93, 0.1), 0 5px 15px rgba(0, 0, 0, 0.07);
+	    margin-bottom: 20px;
+	}
+
+	.productTitle {
+    	font-size: 18px;
+	}
+
+	.productPrice {
+    	font-size: 16px;
+    	margin-bottom: 10px;
+    	margin-left: 115px;
+	}
+	.checkSec{
+		border-right: 0px;
+		padding-left: 0px;
+		padding-right: 0px;
+		height: 100%;
+	}
+
+	.productTitleDiv{
+		margin-top: 10px; 
+    	margin-bottom: 10px;
+    	margin-left: 115px;
+	}
+
+	.boxWithin{
+		padding-left: 0px;
+		padding-right: 0px;
+	}
+
+}
+
+
+
+
+

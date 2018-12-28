@@ -1,0 +1,123 @@
+<%= stylesheet_link_tag "boxes", :media => "all" %>
+<%= javascript_include_tag 'boxes', 'data-turbolinks-track': 'reload' %>
+<%= form_for(box) do |f| %>
+  <% if box.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(box.errors.count, "error") %> prohibited this box from being saved:</h2>
+
+      <ul>
+      <% box.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+
+
+<div class="firstPart">
+<div class="col-md-12 col-xs-12 sec1">
+  <div class="col-md-2 col-xs-4 sec1">
+    <%= image_tag("meal.png", class: "PMbox") %>
+  </div>
+  <div class="col-md-6 col-xs-8 sec1">
+  <div class="titleSub">
+    Main Meal
+  </div>
+  <div class="sub">
+    Choose any of the main meals listed
+  </div>
+  </div>
+</div>
+
+
+  <div class="col-md-12 productSec col-xs-12">
+
+  <% Product.all.each do |product| %>
+
+    <% if product.store_type == "Fusion Express" %>
+    <div class="col-md-6 productPods">
+    <label class="big">
+    <div class="productBox">
+      <div class="imageSide">
+        <%= f.radio_button :product_id, product.id, class: "radioG" %>
+        <%= image_tag(product.image_url(:thumb), class: "boxImage") if product.image? %>
+      </div>
+      <div class="infoSide">
+        <div class="infoTitle"><%= product.title %></div>
+        <div class="infoPrice"><%= number_to_currency(product.price) %></div>
+      </div>
+    </div>
+    </label>
+  </div>
+  <% end %>
+
+  <% end %>
+
+  </div>
+
+</div>
+
+
+
+ <div class="secondPart col-md-12 col-xs-12 sec1">
+  <hr>
+  <div class="col-md-12 col-xs-12 sec1">
+    <div class="col-md-6 col-xs-12 sec1">
+      <div class="col-md-4  col-xs-4 sec1">
+        <%= image_tag("popsicle.png", class: "PMbox") %>
+      </div>
+        <div class="col-md-8 col-xs-8 sec1">
+          <div class="titleSub">
+            Ice Cream
+          </div>
+          <div class="sub">
+            Get a delicious Ice Cream Sandwich
+          </div>
+         
+        </div>
+        <div class="col-xs-12 text-center">
+         <%= image_tag("ice.jpg", size: "220x220", class: "imageItems" )%>
+        </div>
+
+      </div>
+    <div class="col-md-6 col-xs-12 sec1">
+      <div class="col-md-4 col-xs-4 sec1">
+        <%= image_tag("fruit.png", class: "PMbox") %>
+      </div>
+        <div class="col-md-8 col-xs-8 sec1">
+          <div class="titleSub">
+            An Apple
+          </div>
+          <div class="sub">
+            Get a fruit to complete your nutritious meal
+          </div>
+          
+        </div>
+        <div class="col-xs-12 text-center">
+          
+          <%= image_tag("fruit.jpg", size: "220x220", class: "imageItems" )%>
+        </div>
+    </div>
+</div>
+  
+ </div>
+
+
+<div class="col-md-12">
+  <hr>
+</div>
+
+<div class="col-md-12 buttonLast col-xs-12">
+
+<div class="text-center">
+  <div class="actions">
+    <%= f.submit "Create Box", class: "btn btn-primary buttonBox text-center" %>
+  </div>
+</div>
+</div>
+<% end %>
+
+
+
+

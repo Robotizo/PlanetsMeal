@@ -1,0 +1,14 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Orders</h1>
+<%= render 'form', order: @order %>
+
+<%= render @orders %>
+
+
+<br>
+
+<%= will_paginate @orders %>
+
+
+<%= link_to "Order", new_order_path, method: :get %>

@@ -1,0 +1,376 @@
+<%= stylesheet_link_tag "main", :media => "all" %>
+<%= javascript_include_tag 'main', 'data-turbolinks-track': 'reload' %>
+<% if notice %>
+  <div class="alert alert-custom fade in alert-dismissable show" style="margin-top:18px;">
+   <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+      <span aria-hidden="true" style="font-size:20px">×</span>
+    </button>  <%= notice %>
+  </div>
+ <% end %>
+
+
+
+<% if !session[:user_id] %>
+  <div class="mainDisp col-md-12">
+
+  <div class="col-md-4 imageSec">
+    <%= image_tag("PlanetsMealLogo.png", class: "logoImage") %>
+  </div>
+  <div class="col-md-8 descSec">
+    <div class="title">Planet's Meal</div>
+    <div class="subTitle">At Planet’s Meal we aim at promoting a more healthier, ethical and caring lifestyle by eliminating animal cruelty and all the negative environmental impacts of animal agriculture from your meal. Planet’s meal specialises at selling extremely nutritious handpicked vegan food extremely rich in primarily protein and fibre. 
+    </div>
+  </div>
+</div>
+
+
+
+
+  <div class="col-md-12 boxDisp">
+  <div class="displayStatsTitle">
+    <div class="titleStats">Planet's Meal Box</div>
+    <div class="titleStats">Get all you need in one meal box.</div>
+  </div>
+
+  <div class="col-md-12 processSec text-center">
+    <div class="col-md-4 col-xs-4 ">
+      <div class="proCont">Dairy free ice cream</div>
+      <span class="popup" data-popuptext="Get a delicious ice desert"><%= image_tag("popsicle.png", class: "PMbox" )%></span>
+    </div>
+    <div class="col-md-4 col-xs-4 setMiddle">
+      <div class="proCont">Main meal</div>
+      <span class="popup" data-popuptext="Choose your main course"><%= image_tag("meal.png", class: "PMbox") %></span>
+    </div>
+    <div class="col-md-4 col-xs-4">
+      <div class="proCont">Fruit</div>
+      <span class="popup" data-popuptext="Hand pick your favorite fruit"><%= image_tag("fruit.png", class: "PMbox" ) %></span>
+    </div>
+    <div class="displayStatsTitle col-md-12 col-xs-12">
+      <div class="titleStats">Starting at $6.99</div>
+    </div>
+  </div>
+</div>
+
+
+
+
+<div class="statsSec">
+  <div class="displayStatsTitle">
+    <div class="titleStats">Thank you for helping us save:</div>
+  </div>
+
+
+  <div class="col-md-12 displayFront text-center col-xs-12">
+    <div class="col-md-3 col-xs-6 ">
+      <div class="titleMob">Water</div>
+      <%= image_tag("water.png", class: "miniIcon") %>
+      <div class="titleMob"><%= @users.sum(:user_water) %> l</div>
+    </div>
+    <div class="col-md-3 col-xs-6">
+      <div class="titleMob">Land</div>
+      <%= image_tag("tree.png", class: "miniIcon") %>
+      <div class="titleMob"><%= @users.sum(:user_land) %> m<sup>2</sup></div>
+    </div>
+    <div class="col-md-3 col-xs-6 statCells">
+      <div class="titleMob">Carbon</div>
+      <%= image_tag("carbon.png", class: "miniIconCarbon") %>
+      <div class="titleMob"><%= @users.sum(:user_carbon) %> kg</div>
+    </div>
+    <div class="col-md-3 col-xs-6 statCells">
+      <div class="titleMob">Animal Lives</div>
+      <%= image_tag("lives.png", class: "miniIconLives") %>
+      <div class="titleMob"><%= @users.sum(:user_lives) %></div>
+    </div>
+    <div class="buttonSec">
+      <button class= "btn ecoStatsButton">
+        <span>More Information <i class="arrow down"></i></span>
+      </button>
+      <div id="dropInfo">
+        These statistics are scientifically calculated on the basis of the report of the United Nations published on the 29th of November 2006. It is a narrowed down version of how much a person saves for the planet by not consuming meat and by consuming a plant based diet. These show the calculation of resources saved for the planet in comparison to a meat diet with the assumption that you were to consume meat for the vegan meal you just consumed. To produce meat, however absurd it may sound, it takes way more resources than to get the same amount of food from a plant based diet. 1.5 acres of land can produce only 375 pounds of beef but can make 37500 pounds of plant based produce. The feed crops fed to animals are extremely water intensive and most of the energy that they provide to animals are used up by the animals to maintain their daily functions. This exact loss of energy, water was highlighted by the UN. The methane is another problem of the animal agriculture industry! Methane is 275 times more potent than CO<sub>2</sub> and animal agriculture industry contributes to 51% of climate change, more than the entire transportation industry of the world! You can read more about it using our direct links provided at the bottom of the page! 
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+
+</div>
+
+
+
+
+
+
+  <div class="mainDisp2 col-md-12 col-xs-12">
+
+  <div class="col-md-8 descSec2">
+    <div class="title">Vegan food</div>
+    <div class="subTitle2">Not only is our food 100% vegan but it is extremely nutritious and healthy. We focus on providing the absolute best to our customers. This mouth savoring food box not only keeps track of all your health by counting all your calories, fibers and protein consumption but also keeps track of all the environmental effects you individually help to reduce by letting go of meat off your plate for a meal! In short, it’s our way of saying THANK YOU to you by showing you the amount of water, trees and carbon emissions you saved for the world!
+
+    </div>
+    
+  </div>
+  <div class="col-md-4 imageSec2">
+    <%= image_tag("veganIMG1.jpg", class: "logoImage2") %>
+  </div>
+</div>
+
+  <div class="mainDisp col-md-12 col-xs-12">
+
+  <div class="col-md-4 imageSec">
+    <%= image_tag("zeroWaste.jpg", class: "logoImage") %>
+  </div>
+  <div class="col-md-8 descSec">
+    <div class="title">Zero waste policy</div>
+    <div class="subTitle2">All of our food packaging comes in 100% biodegradable boxes made out of sugar cane residue. Even our spoons are made out of wood and we encourage students to recycle them! We believe that we have just one priority: WORK DEDICATEDLY FOR THE ENVIRONMENT AND DON’T THINK TWICE WHEN IT COMES TO WORKING FOR THE ENVIRONMENT. We not only have a zero plastic policy but we also aim to start a washing program to encourage students to use reusable containers which can be washed and less compost can be generated.
+    </div>
+  </div>
+</div>
+
+  <div class="mainDisp2 col-md-12 col-xs-12">
+
+  <div class="col-md-8 descSec2">
+    <div class="title">Mother Nature fund</div>
+    <div class="subTitle2">Planet's Meal has a strong devotion to a vegan lifestyle, hence why a third of the companies profits are going to be reinvested in projects that enhance and accelerate the sustainability, care and expansion of nature. This is important to fulfill our mission in starting the cycle of nature sustainability and change the way wasteful industry functions.
+    </div>
+    
+  </div>
+  <div class="col-md-4 imageSec2">
+    <%= image_tag("motherNature.jpg", class: "logoImage2") %>
+  </div>
+</div>
+
+  <div class="mainDisp col-md-12 col-xs-12">
+
+  <div class="col-md-4 imageSec">
+    <%= image_tag("donate.png", class: "logoImage") %>
+  </div>
+  <div class="col-md-8 descSec">
+    <div class="title">Project Donate</div>
+    <div class="subTitle2">Planet's Meal focuses on providing real value to students by funding meals for students who might need help in affording them. Planet's Meal automatically donates a portion of its profits to project "Donate" run by Dr. Eric Li (Faculty of management UBCO) and provides free food tickets to the food exchange program to distribute it to people who actually need it! Your help really helps other students at UBCO! Thanks for buying from us! 
+    </div>
+  </div>
+</div>
+
+  <div class="mainDisp2 col-md-12 col-xs-12">
+
+  <div class="col-md-8 descSec2">
+    <div class="title">Project Roots</div>
+    <div class="subTitle2">We predict to save roughly 2100 fruits every week from unnecessarily going into the landfill by promoting the use of second grade produce with the amazing help of Enactus. 40% of all produce in Canada is wasted on an annual basis. This extreme food waste is because of how our country manages second-grade produce. This produce is fresh, highly nutritious, and, well, ugly. Grocery stores won’t sell it because of cosmetic standards, which won’t accept bruises or scrapes. With no buyer in sight, farmers are left to haul the produce off to landfills or leave it in the fields to rot! 
+    But at Planet's Meal, we do not believe in fruit shaming! Let's rise above it and not only help our farmers but be more aware to reverse food wastage!
+    </div>
+    
+  </div>
+  <div class="col-md-4 imageSec2">
+    <%= image_tag("roots.png", class: "logoImage2") %>
+  </div>
+</div>
+
+  <div class="mainDisp col-md-12 col-xs-12">
+
+  <div class="col-md-4 imageSec">
+    <%= image_tag("green.png", class: "logoImage") %>
+  </div>
+  <div class="col-md-8 descSec">
+    <div class="title">Green Energy!</div>
+    <div class="subTitle2">Do you know that all the food that you are going to order from Planet's Meal is prepared by using renewable electricity! Planet's Meal really values the idea of "Environment first" and so we offset all our carbon emissions by providing 425 KWH of clean energy back into the electricity grid! To do so, Planet's Meal has partnered with Bull frog power Canada which generates clean energy on behalf on Planet's Meal! Our carbon emissions are next to ZERO!
+    </div>
+  </div>
+</div>
+
+
+
+<% end %>
+
+
+<div class="container-fluid">
+
+<% if session[:user_id] %>
+<div class="col-xs-12">
+  <div class="title">Planet's Meal Box</div>
+</div>
+  <div class="col-md-12 col-xs-12 processSec text-center loggedBox">
+    <div class="col-md-4 col-xs-4 loggedSec">
+      <div class="proCont">Dairy free ice cream</div>
+      <span class="popup" data-popuptext="Get a delicious ice desert"><%= image_tag("popsicle.png", class: "PMbox" )%></span>
+    </div>
+    <div class="col-md-4 col-xs-4 loggedSec">
+      <div class="proCont">Main meal</div>
+      <span class="popup" data-popuptext="Choose your main course"><%= image_tag("meal.png", class: "PMbox") %></span>
+    </div>
+    <div class="col-md-4 col-xs-4 loggedSec">
+      <div class="proCont">Fruit</div>
+      <span class="popup" data-popuptext="Hand pick your favorite fruit"><%= image_tag("fruit.png", class: "PMbox" ) %></span>
+    </div>
+    <div class="displayStatsTitle col-md-12 col-xs-12">
+      <div class="titleStats">Starting at $6.99</div>
+    </div>
+
+    <%= button_to "Build Meal Box", new_box_path, method: :get, class: "orderButton btn boxButton" %>
+
+  </div>
+
+
+<div class="fusionEx col-md-12 col-xs-12">
+<div class="title">Main Course Menu</div>
+      <% @products.each do |product| %>
+      <%= link_to product, method: :get, class: "specialA" do %>
+      <% if product.store_type == "Fusion Express" %>
+      <div class="col-md-6 productPod">
+      <div class="prodBox">
+        <div class="imageSide">
+            <div><%= image_tag(product.image_url(:thumb), class: "productImage") if product.image? %></div>
+        </div>
+        <div class="infoSide">
+            <div class="productTitleDiv"><%= product.title %></div>
+            <div class="productPrice"><%= number_to_currency(product.price) %></div>
+        </div>
+      </div>
+      </div>
+      <% end %>
+      <% end %>
+      <% end %>
+
+</div>
+
+<div class="statsSec col-md-12 ">
+
+
+  <div class="col-md-12 displayFront text-center">
+    <div class="col-md-6 firstSecStats col-xs-12">
+      <div class="statsTitleLog">Personal Stats: Resources saved by you.</div>
+      <hr>
+      <div class="ecoStats">
+      <% if @user.user_water.present? %>
+        <div class="col-md-3 col-xs-3 infoSingle">
+          <div class="loggedInStats">Water</div>
+          <div class="loggedInStats"><%= @user.user_water %> l</div>
+        </div>
+        <div class="col-md-3 col-xs-3 infoSingle">
+          <div class="loggedInStats">Land</div>
+          <div class="loggedInStats"><%= @user.user_land %> m<sup>2</sup></div>
+        </div>
+        <div class="col-md-3 col-xs-3 infoSingle">
+          <div class="loggedInStats">Carbon</div>
+          <div class="loggedInStats"><%= @user.user_carbon %> kg</div>
+        </div>
+        <div class="col-md-3 col-xs-3 infoSingle">
+          <div class="loggedInStats">Lives</div>
+          <div class="loggedInStats"><%= @user.user_lives %></div>
+        </div>
+      <% else %>
+        <div class="loggedInStats">There are no resources stats yet.</div>
+      <% end %>
+      </div>
+      
+      <div class="healthStats col-md-12">
+      <% if @user.user_calories.present? %>
+        <div class="col-md-4 col-xs-4">
+          <div class="loggedInStats">Calories</div>
+          <div class="loggedInStats"><%= @user.user_calories %> g</div>
+        </div>
+        <div class="col-md-4 col-xs-4">
+          <div class="loggedInStats">Proteins</div>
+          <div class="loggedInStats"><%= @user.user_proteins %> g</div>
+        </div>
+        <div class="col-md-4 col-xs-4">
+          <div class="loggedInStats">Carbs</div>
+          <div class="loggedInStats"><%= @user.user_carbs %> g</div>
+        </div>
+      <% else %>
+        <div class="loggedInStats">There are no health stats yet.</div>
+      <% end %>
+      </div>
+    </div>
+
+
+    <div class="col-md-6 col-xs-12 genStats" >
+      <div class="statsTitleLog">General Stats: Total resources saved by Planet's Meal.</div>
+      <hr>
+      <div class="ecoStats">
+        <div class="col-md-3 col-xs-3 infoSingle">
+          <div class="loggedInStats1">Water</div>
+          <div class="loggedInStats1"><%= @users.sum(:user_water) %> l</div>
+        </div>
+        <div class="col-md-3 col-xs-3 infoSingle">
+          <div class="loggedInStats1">Land</div>
+          <div class="loggedInStats1"><%= @users.sum(:user_land) %> m<sup>2</sup></div>
+        </div>
+        <div class="col-md-3 col-xs-3 infoSingle">
+          <div class="loggedInStats1">Carbon</div>
+          <div class="loggedInStats1"><%= @users.sum(:user_carbon) %> kg</div>
+        </div>
+        <div class="col-md-3 col-xs-3 infoSingle">
+          <div class="loggedInStats1">Lives</div>
+          <div class="loggedInStats1"><%= @users.sum(:user_lives) %></div>
+        </div>
+      </div>
+      <button class= "btn ecoStatsButton">
+        <span>More Information <i class="arrow down"></i></p></span>
+      </button>
+    </div>
+    <div class="col-md-12 col-xs-12">
+      <div id="dropInfo">
+        These statistics are scientifically calculated on the basis of the report of the United Nations published on the 29th of November 2006. It is a narrowed down version of how much a person saves for the planet by not consuming meat and by consuming a plant based diet. These show the calculation of resources saved for the planet in comparison to a meat diet with the assumption that you were to consume meat for the vegan meal you just consumed. To produce meat, however absurd it may sound, it takes way more resources than to get the same amount of food from a plant based diet. 1.5 acres of land can produce only 375 pounds of beef but can make 37500 pounds of plant based produce. The feed crops fed to animals are extremely water intensive and most of the energy that they provide to animals are used up by the animals to maintain their daily functions. This exact loss of energy, water was highlighted by the UN. The methane is another problem of the animal agriculture industry! Methane is 275 times more potent than CO<sub>2</sub> and animal agriculture industry contributes to 51% of climate change, more than the entire transportation industry of the world! You can read more about it using our direct links provided at the bottom of the page! 
+      </div>
+    </div>
+
+  </div>
+
+
+</div>
+
+
+
+
+
+
+
+
+<% end %>
+
+
+    <div class="footer col-md-12 col-xs-12">
+      <div class="container">
+        <div class="innerFooter col-md-3">
+          Planet's Meal
+        </div>
+        <div class="innerFooterSub col-md-9">
+          Sources
+          <hr>
+          <div class="innerFooterSub col-md-5">
+          <%= link_to "Facts", "http://www.cowspiracy.com/facts/", :target => "_blank" %>
+            <br>
+          <%= link_to "Environmental Impact", "https://www.vegetariantimes.com/life-garden/the-environmental-impact-of-a-meat-based-diet", :target => "_blank" %>
+            <br>
+          <%= link_to "Greenhouse Emissions", "https://link.springer.com/article/10.1007/s10584-014-1169-1", :target => "_blank" %>
+        </div>
+        <div class="innerFooterSub col-md-4">
+          <%= link_to "Nutrition", "http://static.ewg.org/reports/2011/meateaters/pdf/methodology_ewg_meat_eaters_guide_to_health_and_climate_2011.pdf", :target => "_blank" %>
+          <br>
+             <%= link_to "Vegan Diet", "http://www.wri.org/blog/2016/04/sustainable-diets-what-you-need-know-12-charts", :target => "_blank" %>
+        </div>
+
+      </div>
+      <div class="col-md-12">
+        <hr>
+      </div>
+      
+        <div class="innerFooterSub col-md-push-3 col-md-9">
+          Contact
+          <hr>
+          shiven@planetsmeal.com<br>
+
+      </div>
+    </div>
+</div>
+
+
+
+
+
+</div>
+
+

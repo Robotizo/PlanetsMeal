@@ -1,0 +1,67 @@
+<%= stylesheet_link_tag "orders", :media => "all" %>
+<%= form_for @order, remote: true do |f| %>
+  <% if @order.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(order.errors.count, "error") %> prohibited this order from being saved:</h2>
+
+      <ul>
+      <% order.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+
+  <div class="field">
+    <%= f.hidden_field :box_id, value: @box.id %>
+  </div>
+  <div class="field">
+    <%= f.hidden_field(:order_status, value: "Incomplete") %>
+  </div>
+  <div class="field">
+    <%= f.hidden_field :user_id, value: @user.id %>
+  </div>
+
+
+<div class="box col-md-12 col-xs-12 sec1">
+  <div class="col-md-3 col-xs-12 text-center">
+    <%= image_tag(@box.product.image_url(:thumb), class: "boxProdImg") if @box.product.image? %><br>
+    <div class="boxInfo">
+      <%= @box.product.title %><br>
+      
+    </div>
+  </div>
+  <div class="col-md-1 col-xs-12 text-center">
+    <div class="plusBox">+</div>
+  </div>
+  <div class="col-md-4 col-xs-12">
+    <div class="col-xs-6 col-md-12">
+      <%= image_tag("ice.jpg", size: "125x125", class: "boxProdImgSub" )%>
+      <span class="subBoxInfo">Ice Cream Sandwich</span><br>
+    </div>
+    <div class="col-xs-6 col-md-12">
+      <%= image_tag("fruit.jpg", size: "125x125", class: "boxProdImgSub" )%>
+      <span class="subBoxInfo">Apple</span><br>
+    </div>
+  </div>
+  <div class="col-md-4 text-center col-xs-12">
+    <div class="boxPrice">Total</div>
+    <div class="boxTot"></div>
+    <div class="boxPrice actPrice"><%= number_to_currency(@box.box_price) %></div>
+    <div class="checkoutSec"><%= f.submit "Confirm Order", class: "checkout checkoutButton" %></div>
+  </div>
+  
+</div>
+
+
+
+
+  <div class="actions">
+    
+  </div>
+
+
+
+
+<% end %>

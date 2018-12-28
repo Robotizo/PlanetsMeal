@@ -1,0 +1,102 @@
+<%= stylesheet_link_tag "products", :media => "all" %>
+
+<%= form_for(product) do |f| %>
+  <% if product.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(product.errors.count, "error") %> prohibited this product from being saved:</h2>
+
+      <ul>
+      <% product.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+
+<div class="container">
+
+  <div class="fieldProd">
+    <div><%= f.label :title %></div>
+    <div><%= f.text_field :title %></div>
+  </div>
+
+  <div class="fieldProd">
+    <div><%= f.label :price %></div>
+    <div><%= f.text_field :price %></div>
+  </div>
+
+  <div class="fieldProd">
+    <div><%= f.label :description %></div>
+    <div><%= f.text_area :description %></div>
+  </div>
+
+
+  <div class="fieldProd">
+    <div><%= f.label :image %></div>
+    <div><%= f.file_field :image %></div>
+  </div>
+
+
+
+  <div class="fieldProd">
+    <div><%= f.label :calories %></div>
+    <div><%= f.text_field :calories %></div>
+  </div>
+
+  <div class="fieldProd">
+    <div><%= f.label :proteins %></div>
+    <div><%= f.text_field :proteins %></div>
+  </div>
+
+  <div class="fieldProd">
+    <div><%= f.label :carbs %></div>
+    <div><%= f.text_field :carbs %></div>
+  </div>
+
+    <div class="fieldProd">
+    <div><%= f.label :water %></div>
+    <div><%= f.text_field :water %></div>
+  </div>
+
+  <div class="fieldProd">
+    <div><%= f.label :land %></div>
+    <div><%= f.text_field :land %></div>
+  </div>
+
+  <div class="fieldProd">
+    <div><%= f.label :carbon %></div>
+    <div><%= f.text_field :carbon %></div>
+  </div>
+
+
+  <div class="fieldProd">
+    <div><%= f.label :lives %></div>
+    <div><%= f.text_field :lives %></div>
+  </div>
+
+  <td><%= link_to 'Destroy', product, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+  <div class="fieldProd">
+    <%= f.select(:store_type, Product::STORE_TYPES, options = {prompt: 'Select an access option'}) %>
+  </div>
+
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+
+</div>
+<% end %>
+
+
+
+
+
+
+
+
+
+
+
+
+
+

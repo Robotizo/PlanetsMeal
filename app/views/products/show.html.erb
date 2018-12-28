@@ -1,0 +1,79 @@
+<%= stylesheet_link_tag "products", :media => "all" %>
+<p id="notice"><%= notice %></p>
+
+
+<div class="container">
+	<div class="picSection col-md-6 col-xs-12">
+		<div class="productPic"><%= image_tag(@product.image_url(:thumb), class: "imageShowPage") if @product.image? %></div>
+	</div>
+<div class="mainProductInfo col-md-6 col-md-pull-1 infoSection col-xs-12">
+
+	  <div class="prodTitle"><%= @product.title %></div>
+	  <hr>
+	  <div class="prodPrice"><%= number_to_currency(@product.price) %></div>
+	  <hr>
+	  <div class="buttonDiv"><%= button_to "Create Meal Box", new_box_path, method: :get, class: "addButton" %></div>
+</div>
+
+
+
+
+<div class="subProductInfo1 col-md-12">
+	<div class="descTitleSec col-xs-12">
+	  <div class="descTitle">Description</div>
+	</div>
+	<div class="descContSec col-xs-12">
+		<div class="descContent"><%= @product.description %></div>
+	</div>
+</div>
+
+<div class="subProductInfo col-md-12 col-xs-12">
+<div class="descTitleSec">
+	<div class="descTitle">Product Health Statistics</div>
+</div>
+
+<div class="col-md-4 statSide1">
+	<div class="statSub">Calories</div>
+	<div class="statsInfo"><%= @product.calories %> g</div>
+</div>
+<div class="col-md-4 statSide2">
+	<div class="statSub">Protiens</div>
+	<div class="statsInfo"><%= @product.proteins %> g</div>
+
+</div>
+<div class="col-md-4 statSide3">
+	<div class="statSub">Carbohydrates</div>
+	<div class="statsInfo"><%= @product.carbs %> g  </div>
+</div>
+
+</div>
+
+
+<div class="subProductInfo2 col-md-12 col-xs-12">
+<div class="descTitleSec">
+	<div class="descTitle">Resources saved</div>
+</div>
+
+<div class="col-md-3 statSide1">
+	<div class="statSub">Water</div>
+	<div class="statsInfo"><%= @product.water %> liters</div>
+</div>
+<div class="col-md-3 statSide2">
+	<div class="statSub">Land</div>
+	<div class="statsInfo"><%= @product.land %> m<sup>2</sup></div>
+
+</div>
+<div class="col-md-3 statSideMid">
+	<div class="statSub">Carbon Dioxide</div>
+	<div class="statsInfo"><%= @product.carbon %> kg</div>
+</div>
+<div class="col-md-3 statSide3">
+	<div class="statSub">Animal Lives</div>
+	<div class="statsInfo"><%= @product.lives %> life</div>
+</div>
+
+</div>
+
+
+
+</div>

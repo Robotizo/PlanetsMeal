@@ -1,0 +1,32 @@
+/*// Place all the styles related to the line_items controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/*/
+/* line 6, /Users/macbookpro/Desktop/ecoMeal/app/assets/stylesheets/line_items.scss */
+.productPriceRen {
+  font-size: 20px;
+}
+
+/* line 10, /Users/macbookpro/Desktop/ecoMeal/app/assets/stylesheets/line_items.scss */
+.imageProd {
+  width: 150px;
+}
+
+/* line 14, /Users/macbookpro/Desktop/ecoMeal/app/assets/stylesheets/line_items.scss */
+.productSec {
+  border: 1px solid #d2d2d2;
+  height: 142px;
+  border-radius: 3px;
+  width: 90%;
+  margin-top: 30px;
+}
+
+/* line 23, /Users/macbookpro/Desktop/ecoMeal/app/assets/stylesheets/line_items.scss */
+.imageSide {
+  float: left;
+}
+
+/* line 28, /Users/macbookpro/Desktop/ecoMeal/app/assets/stylesheets/line_items.scss */
+.contentSide {
+  margin-left: 160px;
+  margin-top: 10px;
+}

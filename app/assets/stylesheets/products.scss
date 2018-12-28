@@ -1,0 +1,356 @@
+/*// Place all the styles related to the Products controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/ */
+
+
+
+a {
+  text-decoration: none !important;
+}
+
+.plus{
+	margin-left: 10px;
+	margin-right: 10px;
+	font-size: 40px;
+	margin-top: 50%;
+}
+
+.imageItems{
+	border: 1px solid black;
+	border-radius: 3px;
+	margin-top: 20px;
+	margin-bottom: 20px;
+}
+
+
+.titleBox{
+	margin-top: 80px;
+	margin-bottom: 10px;
+	font-size: 36px;
+}
+
+
+
+.formProd{
+	padding-bottom: 60px;
+}
+
+
+.topTitle{
+	margin-top: 90px;
+	font-size: 35px;
+}
+
+
+.fieldProd{
+	margin-top: 20px;
+	margin-bottom: 20px;
+}
+
+
+.productImage{
+	width: 200px;
+	border-right: 1px solid #d2d2d2;
+}
+
+
+.imageSide{
+	float: left;
+}
+
+
+.picSection{
+	left: 5%;
+}
+
+.infoSection{
+	right: 5%;
+}
+
+.addButton{
+	background-color: white;
+    color: black;
+    border: 2px solid #4CAF50; 
+    padding: 20px 60px;
+    border-radius: 3px;
+}
+
+.addButton:hover{
+	background-color: #4CAF50; 
+	color: white;
+	-webkit-animation-name: example; /* Safari 4.0 - 8.0 */
+    -webkit-animation-duration: 0.5s; /* Safari 4.0 - 8.0 */
+    animation-name: example;
+    animation-duration: 0.5s;
+}
+
+
+@-webkit-keyframes example {
+    from {background-color: white; color: black;}
+    to {background-color: #4CAF50; color: white;}
+
+}
+
+/* Standard syntax */
+@keyframes example {
+    from {background-color: white; color: black;}
+    to {background-color: #4CAF50; color: white;}
+}
+
+.prodBox{
+	border: 1px solid #d2d2d2;
+	height: 201px;
+	border-radius: 3px;
+	margin-top: 30px;
+}
+
+.imageShowPage{
+	border: 1px solid;
+}
+
+.descTitle{
+	font-size: 30px;
+	margin-left: 20px;
+	margin-right: 20px;
+}
+
+.descContent{
+	font-size: 20px;
+	margin-left: 20px;
+	margin-right: 20px;
+}
+
+.productTitle{
+	font-size: 25px;
+}
+
+.productPrice{
+	font-size: 20px;
+	margin-bottom: 10px;
+	margin-left: 210px;
+}
+
+.descTitleSec{
+	border-bottom: 1px solid #bdbdbd;
+}
+
+
+.descContSec{
+	margin-top: 20px;
+}
+
+
+
+
+.productTitleDiv{
+	margin-top: 10px;
+	margin-bottom: 10px;
+	margin-left: 210px;
+}
+
+.productDesc{
+	font-size: 15px;
+	margin-left: 210px;
+}
+
+
+.prodTitle{
+	font-size: 30px;
+}
+
+
+.prodPrice{
+	font-size: 30px;
+}
+
+
+
+
+.productPic{
+	margin-left: 50px;
+	margin-top: 50px;
+}
+
+
+.mainProductInfo{
+	margin-top: 70px;
+}
+
+
+.subProductInfo{
+	margin-top: 80px;
+	margin-bottom: 80px;
+}
+
+
+.subProductInfo1{
+	margin-top: 50px;
+}
+
+
+.subProductInfo2{
+	margin-bottom: 100px;
+}
+
+
+
+
+
+.statsTitle{
+	margin-top: 50px;
+	font-size: 25px;
+	border-bottom: 1px solid #bdbdbd;
+}
+
+.statSub{
+	font-size: 20px;
+	text-align: center;
+	margin-top: 10px;
+}
+
+.statSide1{
+	border-left: 0px solid #bdbdbd;
+	border-right: 0px solid #bdbdbd;
+	margin-top: 30px;
+}
+
+
+.statSide2{
+	border-left: 1px solid #bdbdbd;
+	border-right: 1px solid #bdbdbd;
+	margin-top: 30px;
+	padding-bottom: 30px;
+}
+
+.statSideMid{
+	border-right: 1px solid #bdbdbd;
+	margin-top: 30px;
+	padding-bottom: 30px;
+}
+
+
+
+.statSide3{
+	border-left: 0px solid #bdbdbd;
+	border-right: 0px solid #bdbdbd;
+	margin-top: 30px;
+
+}
+
+
+.statsInfo{
+	text-align: center;
+	margin-top: 50px;
+	font-size: 30px;
+}
+
+.buttonDiv{
+	font-size: 20px;
+}
+
+
+@media screen and (max-width: 768px){
+	.boxInf{
+		margin-top: 80px;
+	}
+	.plus{
+		margin-left: 10px;
+		margin-right: 10px;
+		font-size: 40px;
+		margin-top: 0%;
+	}
+
+	.statSideMid{
+		border-right: 0px;
+		border-bottom: 1px solid #bdbdbd
+	}
+	.statSide2{
+		border-bottom: 1px solid #bdbdbd;
+		border-top: 1px solid #bdbdbd;
+		border-left: 0px;
+		border-right: 0px;
+	}
+	.statSub{
+		font-size: 20px;
+    	text-align: center;
+    	margin-top: 30px;
+	}
+	.subProductInfo{
+		padding-right: 0px;
+		padding-left: 0px;
+		margin-top: 40px;
+	}
+
+
+	.descContSec{
+		padding-left: 0px;
+		padding-right: 0px;
+	}
+
+	.descContent{
+		margin-left: 0px;
+		margin-right: 0px;
+	}
+
+	.descTitle{
+		margin-left: 0px;
+		margin-right: 0px;
+		font-size: 27px;
+	}
+
+	.descTitleSec{
+		margin-top: 40px;
+		padding-left: 0px !important;
+		padding-right: 0px !important;
+	}
+
+	.prodTitle{
+		font-size: 27px;
+	}
+
+	.prodPrice{
+		font-size: 25px;
+	}
+
+	.descContent{
+		font-size: 18px;
+	}
+
+
+	.infoSection{
+		right: 0%;
+	}
+	.mainProductInfo{
+		margin-top: 40px;
+	}
+	.imageShowPage{
+		width: 80%;
+		margin-left: 32px;
+    	margin-right: 32px;
+	}
+	.productPic{
+		margin-top: 40px;
+		margin-left: 0px;
+	}
+
+
+
+	.picSection{
+		left: 0%;
+	}
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+

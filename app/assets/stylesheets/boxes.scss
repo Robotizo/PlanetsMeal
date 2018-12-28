@@ -1,0 +1,208 @@
+/*// Place all the styles related to the boxes controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/*/
+
+
+
+.buttonBox{
+    width: 100%;
+    background-color: #92c755;
+    height: 60px;
+    position: fixed;
+    bottom: 0px;
+    left: 0px;
+	display: none;
+	opacity: 1;
+	animation-name: fadeInOpacity;
+	animation-iteration-count: 1;
+	animation-timing-function: ease-in;
+	animation-duration: 0.3s;
+}
+
+@keyframes fadeInOpacity {
+	0% {
+		bottom: -50px;
+	}
+	20% {
+		bottom: -30px;
+	}
+	50% {
+		bottom: -10px;
+	}
+	100% {
+		bottom: 0px;
+	}
+}
+
+.buttonBox:hover{
+	width: 100%;
+	background-color: #92c755;
+}
+
+
+.buttonBox:focus{
+	width: 100%;
+	background-color: #92c755;
+}
+
+
+.buttonBox:active{
+	width: 100%;
+	background-color: #92c755;
+}
+
+
+.buttonLast{
+	margin-bottom: 100px;
+	margin-top: 30px;
+}
+
+.imageItems{
+	border: 1px solid black;
+	border-radius: 5px;
+	margin-top: 50px;
+	margin-bottom: 20px;
+
+}
+
+.infoTitle{
+	font-size: 20px;
+}
+
+.infoPrice{
+	font-size: 15px;
+	margin-top: 10px;
+}
+.infoSide{
+    margin-top: 30px;
+    margin-left: 200px;
+}
+
+.imageSide{
+	float: left;
+}
+
+
+
+
+.PMbox{
+    width: 140px;
+    margin-bottom: 20px;
+    margin-top: 20px;
+    border-radius: 300px;
+
+}
+
+.title{
+	margin-top: 20px;
+	margin-bottom: 20px;
+	font-size: 35px;
+}
+
+.titleSub{
+	margin-top: 10px;
+	font-size: 30px;
+	color: #92c755;
+	margin-top: 30px;
+}
+
+.sub{
+	margin-bottom: 10px;
+}
+
+.boxImage{
+	width: 150px;
+	border-radius: 5px;
+}
+
+
+
+.productBox{
+	margin-bottom: 20px;
+	height: 172px;
+	border: 1px solid #9c9c9c;
+	padding: 10px;
+	box-shadow: 0 15px 35px rgba(50,50,93,.1), 0 5px 15px rgba(0,0,0,.07);
+}
+
+
+.big {
+    display:block;
+    cursor:pointer;
+}
+
+
+.radioG{
+	margin: 10px !important;
+}
+
+
+@media screen and (max-width: 768px){
+	.buttonBox{
+		border-radius: 4px 4px 0px 0px; 
+		outline: none;
+	}
+	.imageItems{
+		width: 180px;
+		height: 180px;
+		border: 1px solid black;
+    	border-radius: 5px;
+    	margin-top: 0px;
+    	margin-bottom: 30px;
+	}
+	.productBox{
+		height: 122px;
+	}
+	.infoTitle {
+    	font-size: 18px;
+	}
+	.boxImage {
+	    width: 100px;
+	    border-radius: 5px;
+	}
+	.infoSide {
+	    margin-top: 5px;
+	    margin-left: 147px;
+	}
+
+	.PMbox{
+		width: 90px;
+	}
+
+	.productSec{
+		padding-left: 0px;
+		padding-right: 0px;
+	}
+
+	.productPods{
+		padding-left: 0px;
+		padding-right: 0px;
+	}
+
+	.sec1{
+		padding-left: 0px;
+		padding-right: 0px;
+	}
+
+	.titleSub {
+	    margin-top: 10px;
+	    font-size: 25px;
+	    color: #92c755;
+	    margin-top: 12px;
+	}
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+

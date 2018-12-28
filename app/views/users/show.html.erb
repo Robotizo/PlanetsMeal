@@ -1,0 +1,135 @@
+<%= stylesheet_link_tag "users", :media => "all" %>
+<%= javascript_include_tag 'users', 'data-turbolinks-track': 'reload' %>
+<p id="notice"><%= notice %></p>
+
+<div class="container">
+
+<div class="userSets">
+<div class="userName"><%= @user.name %><p></div>
+
+<div class="dropdown">
+  <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+    
+    <span class="userOps">Settings <i class="arrow down"></i></p></span>
+  </button>
+  <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+    	<div class="logOut"><%= link_to 'Logout', logout_url, method: :delete, data: {confirm: 'Are you sure?'} %></div>
+  </div>
+</div>
+</div>
+
+
+
+<div class="healthStats col-md-12">
+	<div class="statsTitle">
+		Your Overall Health Stats
+	</div>
+
+	<div class="col-md-4 statSide1 col-xs-4">
+		<div class="statSub">Calories</div>
+		<div class="statsInfo"><%= @user.user_calories %> g</div>
+
+	</div>
+
+	<div class="col-md-4 statSide1 col-xs-4">
+		<div class="statSub">Protiens</div>
+		<div class="statsInfo"><%= @user.user_proteins %> g</div>
+
+	</div>
+
+	<div class="col-md-4 statSide1 col-xs-4">
+		<div class="statSub">Protiens</div>
+		<div class="statsInfo"><%= @user.user_carbs %> g</div>
+
+	</div>
+
+</div>
+
+
+<div class="ecoStats col-md-12">
+	<div class="statsTitle">
+		Your Eco Statistics
+	</div>
+
+	<div class="col-md-3 statSide1">
+		<div class="statSub">Water saved</div>
+		<div class="statsInfo"><%= @user.user_water %> liters</div>
+
+	</div>
+
+	<div class="col-md-3 statSide1">
+		<div class="statSub">Land preserved</div>
+		<div class="statsInfo"><%= @user.user_land %> m<sup>2</sup></div>
+
+	</div>
+
+	<div class="col-md-3 statSide1">
+		<div class="statSub">Carbon Footprint Savings</div>
+		<div class="statsInfo"><%= @user.user_carbon %> kg</div>
+	</div>
+
+	<div class="col-md-3 statSide1">
+		<div class="statSub">Animal Lives Saved</div>
+		<div class="statsInfo"><%= @user.user_lives %> lives</div>
+
+	</div>
+
+
+
+
+
+<div class="ecoStats col-md-12">
+	<div class="statsTitleDiff">
+		Your Orders
+	</div>
+
+
+
+  <button class= "btn ordersButton">
+    <span>View Orders <i class="arrow down"></i></span>
+  </button>
+
+  <div id="orderInfo">
+	<% @user.orders.reverse.each do |order| %>
+		<table class="table">
+			<thead>
+				<tr>
+					<th>Order Number</th>
+					<th>Order Access</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr>
+					<th>#<%= order.id %></th>
+					<th><%= link_to 'Show Order', order %></th>
+				</tr>
+				
+			</tbody>
+			
+		</table>
+	<% end %>
+</div>
+
+
+
+
+</div>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

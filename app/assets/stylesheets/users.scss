@@ -1,0 +1,232 @@
+/*// Place all the styles related to the Users controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/*/
+
+
+
+
+#orderInfo{
+	margin-top: 20px;
+}
+
+
+.statsTitleDiff{
+	margin-top: 50px;
+	font-size: 25px;
+}
+
+.ordersButton{
+	width: 100%;
+	height: 50px;
+	padding: 0px !important;
+	outline: none !important;
+	margin-top: 20px;
+	border: 1px solid #d2d2d2;
+
+}
+
+.wholeSec{
+	margin-bottom: 50px;
+}
+
+.logOut{
+	margin-left: 10px;
+}
+
+
+
+.signIn{
+	width: 100%;
+	background-color: #92c755;
+	height: 50px;
+	padding: 0px 0px !important;
+}
+
+.signIn:hover{
+	width: 100%;
+	background-color: #92c755;
+}
+
+
+.signIn:focus{
+	width: 100%;
+	background-color: #92c755;
+}
+
+
+.signIn:active{
+	width: 100%;
+	background-color: #92c755;
+}
+
+.form-control{
+	height: 40px;
+}
+
+.passField{
+	margin-top: 20px; 
+	margin-bottom: 20px;
+}
+
+.sessionTitle{
+	margin-top: 40px;
+	font-size: 40px;
+	text-align: center;
+	margin-bottom: 40px;
+	color: #92c755;
+}
+
+
+.titleForms{
+	font-size: 20px;
+	margin-bottom: 10px;
+}
+
+.dropdown-menu{
+	    padding: 11px 0;
+}
+.btn {
+    display: inline-block;
+    margin-bottom: 0;
+    font-weight: normal;
+    text-align: center;
+    vertical-align: middle;
+    touch-action: manipulation;
+    cursor: pointer;
+    background-image: none;
+    border: 1px solid black;
+    white-space: nowrap;
+    padding: 0px 12px;
+    padding-top: 10px;
+    font-size: 14px;
+    line-height: 1.428571429;
+    border-radius: 4px;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+.userOps{
+	font-size: 22px;
+}
+
+i {
+    border: solid black;
+    border-width: 0 3px 3px 0;
+    display: inline-block;
+    padding: 5px;
+    margin-bottom: 3px;
+}
+
+.down {
+    transform: rotate(45deg);
+    -webkit-transform: rotate(45deg);
+}
+
+.userSets{
+	margin-top: 50px;
+}
+
+
+
+.ecoStats{
+	margin-top: 70px;
+	margin-bottom: 80px;
+}
+
+
+
+.healthStats{
+	margin-top: 20px;
+}
+
+
+
+.userName{
+	font-size: 30px;
+}
+
+
+.statsTitle{
+	margin-top: 50px;
+	font-size: 25px;
+	border-bottom: 1px solid #bdbdbd;
+}
+
+.statSub{
+	font-size: 20px;
+	text-align: center;
+	margin-top: 10px;
+}
+
+.statSide1{
+	border-left: 0px solid #bdbdbd;
+	border-right: 0px solid #bdbdbd;
+	margin-top: 30px;
+}
+
+
+.statSide2{
+	border-left: 1px solid #bdbdbd;
+	border-right: 1px solid #bdbdbd;
+	margin-top: 30px;
+	padding-bottom: 30px;
+}
+
+
+.statSide3{
+	border-left: 0px solid #bdbdbd;
+	border-right: 0px solid #bdbdbd;
+	margin-top: 30px;
+
+}
+
+
+.statsInfo{
+	text-align: center;
+	margin-top: 50px;
+	font-size: 30px;
+}
+
+
+@media screen and (max-width: 768px){
+	.statsTitle{
+		font-size: 20px;
+	}
+	.statsInfo{
+		font-size: 18px;
+		text-align: center;
+	    margin-bottom: 50px;
+	    margin-top: 20px;
+	}
+	.healthStats{
+		padding-left: 0px;
+		padding-right: 0px;
+	}
+	.statSide1{
+		padding-left: 0px;
+		padding-right: 0px;
+		margin-top: 20px;
+	}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

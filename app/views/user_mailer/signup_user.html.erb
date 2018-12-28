@@ -1,0 +1,111 @@
+<html>
+	<head>
+		<style type="text/css">
+			body{
+					font-family: "Century Gothic", CenturyGothic, Geneva, AppleGothic, sans-serif;
+				}
+
+		  	ul {
+			    list-style-type: none;
+			    margin: 0;
+			    padding: 0;
+			    overflow: hidden;
+			    background-color: white;
+			  }
+
+			.textWithin{
+			    font-weight: 300;
+			    font-size: 35px;
+			    color: #92c755;
+			  }
+
+
+			  .textSec{
+			  	text-align: center;
+			  	margin-top: 40px;
+			  }
+
+			   	.content{
+				    margin-left: 15%;
+				    margin-right: 15%;
+				    font-size: 20px;
+				    margin-top: 30px;
+				  }
+
+				 .logoImage{
+				 	width: 140px;
+				 	margin-top: 50px;
+				 }
+
+		@media screen and (max-width: 768px){
+				.logoImage{
+				 	width: 120px;
+				 	margin-top: 50px;
+				 }
+				.textWithin{
+				    font-weight: 300;
+				    font-size: 25px;
+				    color: #92c755;
+				    padding: 14px 16px;
+				    position: relative;
+	    			bottom: 37px;
+			  	}
+
+			  	.content{
+				    margin-left: 5%;
+				    margin-right: 5%;
+				    font-size: 20px;
+				    margin-top: 30px;
+				  }
+		}
+  		</style>
+	</head>
+	<body>
+		<ul>
+    		<div class="textSec"> 
+    			<span class="textWithin">Planet's Meal </span>
+    		</div>
+  		</ul>
+  		<div class="content">
+  				Hi <%= @user.name %>,<br><br>
+
+				Thank you for being an environmental superhero and joining the <%= link_to 'Planet’s Meal', root_url %> community. You’re now choosing 100% path towards sustainability!<br>
+				I wanted to get all the nitty gritty stuff out of the way so you could get excited about saving the world! To make sure you’ve got a good grasp on your new community, I’ll act as your personal guide, making sure you check out all the important benefits of choosing Planet’s Meal.<br>
+				First, Thanks for registering with us! Now you can not only track your health, get loyalty discounts but also see how much you are saving for the planet in comparison to a meat diet!<br><br>
+				• View your emissions reductions impact<br><br>
+				• Track your health<br><br>
+				• Get Loyalty discounts <br><br>
+				Also, please remember to take pride in taking your first step towards saving lives, reducing plastic and contributing financially towards green projects! Once again, thank you for being an environmental superhero!
+				<br>
+				<br>
+
+				Warm Regards,<br>
+				Planet’s Meal Team
+				<br>
+				<br>
+
+
+				
+
+  		</div>
+	</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

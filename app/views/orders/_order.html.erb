@@ -1,0 +1,15 @@
+<%= stylesheet_link_tag "orders", :media => "all" %>
+
+<table class="table" id="orders">
+	<tbody>
+		 <div id="liveOrders">
+			 <tr class="currentLine">
+			  <td><%= order.user.try(:name) %></td>
+			  <td>Order #<%= order.id %></td>
+			  <td><%= order.order_status %></td>
+			  <td><%= link_to 'Show', order %></td>
+			</tr>
+		</div>
+
+	</tbody>
+</table>

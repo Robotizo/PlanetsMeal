@@ -1,0 +1,792 @@
+/*// Place all the styles related to the Main controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/*/
+
+
+a {
+  text-decoration: none !important;
+}
+
+
+
+.boxButton{
+	margin-top: 20px;
+	margin-bottom: 20px;
+}
+
+
+.loggedBox{
+	margin-top: 30px;
+	padding-right: 15px;
+	padding-left: 15px;
+}
+
+
+
+.priceStats{
+	margin-top: 50px;
+}
+
+
+
+
+span.popup {
+  height: 0;
+  color: white;
+  position: relative;
+  cursor: pointer;
+
+  &:after {
+    content: attr(data-popuptext);
+    background: rgba(0, 0, 0, 0.85);
+    border-radius: 3px;
+    opacity: 0;
+    top: 0;
+    left: 0;
+    position: absolute;
+    transition: 500ms ease;
+    white-space: nowrap;
+    max-height: 0;
+  }
+  
+  &:hover:after {
+    opacity: 1;
+    top: 5.5em;
+    max-height: 200px;
+    padding: .4em;
+  }
+}
+
+
+.orderButton{
+	width: 100%;
+	background-color: #92c755;
+	height: 50px;
+	border: black 1px solid;
+	color: white;
+}
+
+
+.orderButton:hover{
+	color: white;
+	box-shadow: 0px 0px 16px #868686;
+}
+
+
+
+.PMboxIcon{
+	width: 230px;
+	margin-bottom: 20px;
+	border-radius: 300px;
+}
+
+
+.mainBox{
+	text-align: center;
+}
+
+.boxDisp{
+	margin-top: 30px;
+	margin-bottom: 30px;
+}
+
+
+.PMbox{
+    width: 160px;
+    margin-bottom: 20px;
+    margin-top: 20px;
+    border-radius: 300px;
+}
+
+
+.PMbox:hover{
+	box-shadow: 0px 0px 16px #868686;
+}
+
+.alert-custom{
+  background-color: #92c755;
+  color:#fff;
+}
+
+
+.proContSteps{
+	margin-top: 20px;
+	font-size: 30px;
+}
+
+.proCont{
+	font-size: 20px;
+}
+
+
+.icon1{
+	width: 220px;
+    border-radius: 30px;
+    height: 240px;
+    padding: 20px;
+    margin-bottom: 10px;
+}
+
+
+.icon2{
+    width: 337px;
+    border-radius: 30px;
+    height: 150px;
+    margin: 20px;
+    margin-bottom: 50px;
+    margin-top: 50px
+}
+
+
+/*
+
+
+.processSec{
+	margin-bottom: 50px;
+}
+
+*/
+
+
+.titleStatsProcess{
+	text-align: center;
+    margin-bottom: 30px;
+    color: #868686;
+}
+
+
+.fusionEx{
+	margin-bottom: 40px;
+}
+
+.withinDat{
+    float: left;
+    margin: 10px;
+    margin-left: 25px;
+    font-size: 18px;
+}
+
+.dataWithin{
+    padding: 10px;
+    margin-left: 201px;
+}
+
+
+i {
+    border: solid black;
+    border-width: 0 3px 3px 0;
+    display: inline-block;
+    padding: 5px;
+    margin-bottom: 3px;
+}
+
+.down {
+    transform: rotate(45deg);
+    -webkit-transform: rotate(45deg);
+}
+
+
+.specialA{
+  color: black !important;
+}
+
+
+.loggedInStats1{
+	margin-top: 20px;
+	font-size: 20px;
+}
+
+.statsTitleLog{
+	font-size: 20px;
+	text-align: left;
+	font-weight: bold;
+}
+
+.healthStats{
+	padding-top: 15px;
+	margin-top: 15px;
+	border-top: 1px solid #d2d2d2;
+}
+
+
+.firstSecStats{
+	border-right: 1px solid #d2d2d2;
+}
+
+.loggedInStats{
+	font-size: 18px;
+}
+
+
+
+.innerFooter{
+	font-size: 26px;
+}
+
+.innerFooterSub{
+	font-size: 20px;
+}
+
+
+.footer{
+	padding: 65px 0 55px;
+    color: #8898aa;
+    line-height: 30px;
+    font-size: 15px;
+    white-space: nowrap;
+    border-top: 1px solid #d2d2d2;
+}
+
+
+.academyCor{
+	padding-bottom: 100px;
+}
+
+.miniIcon{
+	width: 100px;
+    border-radius: 30px;
+    height: 120px;
+    padding: 20px;
+}
+
+.miniIconCarbon{
+	width: 160px;
+    border-radius: 30px;
+    height: 120px;
+    padding: 20px;
+}
+
+
+.miniIconLives{
+	width: 120px;
+    border-radius: 30px;
+    height: 120px;
+    padding: 20px;
+}
+
+
+.statsSec{
+	border-top: 1px solid #dcdcdc;
+}
+
+.superMain{
+	border-bottom: 1px solid #868686;
+}
+
+.mainDisp{
+	padding-left: 0px !important;
+    padding-top: 30px;
+}
+
+.prodDisp{
+	float: left;
+	width: 100%;
+}
+
+.productDispTitle{
+	font-size: 30px;
+	text-align: center;
+	color: #868686;
+	margin-bottom: 20px;
+}
+
+.sectionOne{
+	width: 100%;
+	float: left;
+}
+
+.first{
+	padding-top: 20px;
+	font-size: 35px;
+	text-align: center;
+	padding-bottom: 20px;
+	margin-bottom: 20px;
+	margin-top: 10px;
+}
+
+.second{
+	padding-top: 20px;
+	font-size: 35px;
+	text-align: center;
+	padding-bottom: 20px;
+	margin-bottom: 20px;
+	    margin-top: 10px;
+}
+
+
+
+
+.storeNames{
+	border-top: 1px solid #868686;
+}
+
+
+.imageSec{
+	padding-left: 0px;
+}
+
+.descSec{
+	padding-right: 20px;
+}
+
+
+
+.logoImage{
+    width: 100%;
+    border-radius: 30px;
+    height: 350px;
+    padding: 20px;
+}
+
+.title{
+	font-size: 35px;
+	color: #4CAF50;
+	margin-bottom: 10px;
+	text-align: left;
+	margin-top: 30px;
+}
+
+.subTitle{
+	font-size: 20px;
+	color: #868686;
+	text-align: left;
+	margin-top: 20px;
+}
+
+.titleStats{
+	text-align: center;
+	margin-bottom: 10px;
+	color: black;
+}
+
+.displayStatsTitle{
+
+	font-size: 30px;
+    margin-top: 30px;
+
+}
+
+.dataDisplay{
+	margin-left: 20px;
+	margin-top: 20px;
+	font-size: 30px;
+}
+
+.displayFront{
+	font-size: 35px;
+    margin-bottom: 30px;
+    margin-top: 20px;
+}
+
+
+.productImage{
+	width: 200px;
+    border-right: 1px solid #868686;
+    border-radius: 2px 0px 0px 2px;
+}
+
+
+.imageSide{
+	float: left;
+}
+
+
+.prodBox{
+	border: 1px solid #868686;
+	height: 201px;
+	border-radius: 3px;
+	margin: 10px;
+	box-shadow: 0 15px 35px rgba(50,50,93,.1), 0 5px 15px rgba(0,0,0,.07);
+}
+
+.buttonDiv{
+	margin-top: 33px;
+}
+
+
+
+
+.productTitle{
+	font-size: 20px;
+}
+
+.productPrice{
+	font-size: 18px;
+	margin-bottom: 10px;
+	margin-left: 210px;
+	font-size: 20px;
+}
+
+
+.productTitleDiv{
+	margin-top: 10px;
+	margin-bottom: 10px;
+	margin-left: 210px;
+	font-size: 25px;
+	margin-right: 15px;
+}
+
+.productDesc{
+	font-size: 14px;
+	margin-left: 210px;
+	margin-right: 10px;
+}
+
+
+.addButton{
+	background-color: #4CAF50; /* Green */
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    top: 158px;
+    left: 473px;
+    position: absolute;
+    border-radius: 0px 0px 2px 0px;
+    outline: none;
+}
+
+
+.addButtonDisp{
+	background-color: #4CAF50; /* Green */
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    top: 158px;
+    left: 514px;
+    position: absolute;
+    border-radius: 0px 0px 2px 0px;
+    outline: none;
+}
+/* other sections */
+
+.mainDisp2{
+	padding-right: 0px !important;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+.imageSec2{
+	
+	padding-right: 0px;
+}
+
+.descSec2{
+	padding-left: 30px;
+}
+
+.logoImage2{
+    width: 100%;
+    border-radius: 30px;
+    height: 350px;
+    padding: 20px;
+}
+
+.subTitle2{
+	font-size: 18px;
+    color: #868686;
+    text-align: left;
+    margin-top: 20px;
+}
+
+.statCells{
+	margin-top: 0px !important;
+	border-top: 0px !important;
+}
+
+.ecoStatsButton{
+	margin-top: 20px;
+	background-color: white !important;
+	color: black;
+	border-bottom: 1px solid #dcdcdc;
+	width: 100%;
+	font-size: 20px;
+	text-align: left;
+	outline: none !important;
+	padding: 10px;
+
+}
+
+.ecoStatsButton:active{
+	box-shadow: none;
+}
+
+
+.buttonSec{
+	text-align: left;
+}
+
+
+#dropInfo{
+	font-size: 14px;
+	margin-left: 10px;
+	margin-right: 10px;
+	margin-top: 20px;
+}
+
+
+
+
+
+
+@media screen and (max-width: 768px){
+	span.popup:after{
+		display: none;
+	}
+	.statsSec{
+		border-top: 0px solid #dcdcdc;
+	}
+	.displayStatsTitle {
+    	font-size: 30px;
+    	margin-top: 20px;
+    	margin-bottom: 20px;
+	}
+	.processSec {
+    	margin-bottom: 30px;
+    	padding-left: 0px;
+    	padding-right: 0px;
+	}
+	.loggedBox{
+		padding-left: 0px;
+		padding-right: 0px;
+	}
+	.PMbox{
+		width: 90px;
+	}
+	.loggedSec{
+		padding-left: 0px;
+		padding-right: 0px;
+	}
+	.proCont {
+		display: none;
+	}
+	.setMiddle{
+		border-top: 0px;
+		border-bottom: 0px;
+	}
+	.midProcess{
+		border-left: 0px;
+		border-right: 0px;
+		padding-top: 10px;
+    	padding-bottom: 10px;
+	}
+	.icon2 {
+	    width: 100%;
+	    border-radius: 30px;
+	    height: 100px;
+	    margin: 0px;
+	    margin-bottom: 50px;
+	    margin-top: 50px;
+	}
+
+	.genStats{
+		display: none;
+	}
+	.dataWithin{
+		display: none;
+	}
+	.productPod{
+		padding-right: 0px;
+		padding-left: 0px;
+	}
+	.academyCor{
+		padding-right: 0px;
+		padding-left: 0px;
+	}
+	.loggedInStats1{
+		font-size: 12px;
+	}
+	.genStats{
+		margin-top: 40px;
+		padding-left: 0px;
+		padding-right: 0px;
+	}
+	.productDesc{
+		display: none;
+	}
+	.loggedInStats{
+		font-size: 12px;
+	}
+	.infoSingle{
+		padding-left: 0px;
+		padding-right: 0px;
+	}
+	.healthStats{
+		border-top: 0px;
+		margin-top: 60px;
+	}
+	.fusionEx{
+		padding-left: 0px;
+		padding-right: 0px;
+	}
+	.statsTitleLog{
+		font-size: 14px;
+	}
+	.displayFront{
+		padding-left: 0px !important;
+		padding-right: 0px !important;
+	}
+	.firstSecStats{
+		border-right: 0px;
+		padding-left: 0px !important;
+		padding-right: 0px !important;
+	}
+	.ecoMealTitle{
+		margin-left: 0px;
+	}
+	.miniIconCarbon{
+		padding: 0px;
+		width: 100%;
+    	border-radius: 30px;
+    	height: 100px;
+	}
+	.miniIconLives{
+		width: 78%;
+	    border-radius: 30px;
+	    height: 100px;
+	    padding: 0px;
+	}
+	.miniIcon {
+	    width: 55%;
+	    border-radius: 30px;
+	    height: 100px;
+	    padding: 0px;
+	}
+	.statsSec{
+		border-bottom: 0px;
+		padding-left: 0px !important;
+		padding-right: 0px !important;
+	}
+
+	.second {
+	    padding-top: 20px;
+	    font-size: 30px;
+	    text-align: center;
+	    padding-bottom: 20px;
+	    margin-bottom: 20px;
+	    margin-top: 10px;
+	}
+	.productPrice {
+	    font-size: 16px;
+	    margin-bottom: 10px;
+	    margin-left: 115px;
+	}
+	.productTitleDiv {
+	    margin-top: 5px;
+	    margin-left: 115px;
+	    margin-bottom: 5px;
+	    font-size: 18px;
+	}
+	.productTitle {
+    	font-size: 18px;
+	}
+	.productImage {
+	    width: 109px;
+	    border-right: 1px solid #868686;
+	    border-radius: 2px 0px 0px 2px;
+	}
+	.prodBox {
+	    border: 1px solid #868686;
+	    height: 110px;
+	    border-radius: 3px;
+	    margin: 0px;
+	    margin-top: 20px;
+	    box-shadow: 0 15px 35px rgba(50, 50, 93, 0.1), 0 5px 15px rgba(0, 0, 0, 0.07);
+	    margin-bottom: 20px;
+	}
+	.first {
+	    padding-top: 20px;
+	    font-size: 30px;
+	    text-align: center;
+	    padding-bottom: 20px;
+	    margin-bottom: 20px;
+	    margin-top: 30px;
+	}
+	.sectionOne{
+		width: 100%;
+		float: left;
+	}
+	.logoImage2{
+	    width: 100%;
+	    border-radius: 10px;
+	    height: 100%;
+	    padding: 0px;
+	    margin-bottom: 30px;
+    	margin-top: 30px;
+	}
+	.imageSec2{
+		padding-right: 15px !important;
+	}
+	.mainDisp2{
+		padding-right: 15px !important;
+		border-bottom: 1px solid;
+    	border-top: 1px solid;
+    	margin-top: 10px;
+    	margin-bottom: 10px;
+
+	}
+	.subTitle2{
+		font-size: 15px;
+	}
+	.descSec2{
+		padding-left: 15px !important;
+	}
+	.titleMob{
+		padding-top: 20px;
+    	font-size: 22px;
+	}
+	.statCells{
+		margin-top: 40px !important;
+		border-top: 1px solid #dcdcdc !important;
+	}
+	.titleStats{
+		font-size: 22px;
+	}
+	.subTitle{
+		font-size: 16px;
+    	margin-bottom: 20px;
+	}
+	.title {
+	    font-size: 23px;
+    	margin-top: 20px;
+    	text-align: center;
+	}
+	.mainDisp{
+		padding-left: 15px !important;
+		padding-top: 20px;
+		padding-bottom: 20px;
+	}
+	.imageSec{
+		padding-left: 15px;
+	}
+
+	.logoImage{
+	    width: 100%;
+	    border-radius: 10px;
+	    height: 100%;
+	    padding: 0px
+	}
+
+	.footer{
+		border-top: 0px;
+	}
+}
+
+
+
+
+
+
+
+
+
+
+
+

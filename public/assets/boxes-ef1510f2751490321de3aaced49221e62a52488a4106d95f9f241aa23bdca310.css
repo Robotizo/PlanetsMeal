@@ -1,0 +1,191 @@
+/*// Place all the styles related to the boxes controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/*/
+/* line 8, /Users/macbookpro/Desktop/ecoMeal/app/assets/stylesheets/boxes.scss */
+.buttonBox {
+  width: 100%;
+  background-color: #92c755;
+  height: 60px;
+  position: fixed;
+  bottom: 0px;
+  left: 0px;
+  display: none;
+}
+
+/* line 18, /Users/macbookpro/Desktop/ecoMeal/app/assets/stylesheets/boxes.scss */
+.buttonBox:hover {
+  width: 100%;
+  background-color: #92c755;
+}
+
+/* line 24, /Users/macbookpro/Desktop/ecoMeal/app/assets/stylesheets/boxes.scss */
+.buttonBox:focus {
+  width: 100%;
+  background-color: #92c755;
+}
+
+/* line 30, /Users/macbookpro/Desktop/ecoMeal/app/assets/stylesheets/boxes.scss */
+.buttonBox:active {
+  width: 100%;
+  background-color: #92c755;
+}
+
+/* line 36, /Users/macbookpro/Desktop/ecoMeal/app/assets/stylesheets/boxes.scss */
+.buttonLast {
+  margin-bottom: 100px;
+  margin-top: 30px;
+}
+
+/* line 41, /Users/macbookpro/Desktop/ecoMeal/app/assets/stylesheets/boxes.scss */
+.imageItems {
+  border: 1px solid black;
+  border-radius: 5px;
+  margin-top: 50px;
+  margin-bottom: 20px;
+}
+
+/* line 49, /Users/macbookpro/Desktop/ecoMeal/app/assets/stylesheets/boxes.scss */
+.infoTitle {
+  font-size: 20px;
+}
+
+/* line 53, /Users/macbookpro/Desktop/ecoMeal/app/assets/stylesheets/boxes.scss */
+.infoPrice {
+  font-size: 15px;
+  margin-top: 10px;
+}
+
+/* line 57, /Users/macbookpro/Desktop/ecoMeal/app/assets/stylesheets/boxes.scss */
+.infoSide {
+  margin-top: 30px;
+  margin-left: 200px;
+}
+
+/* line 62, /Users/macbookpro/Desktop/ecoMeal/app/assets/stylesheets/boxes.scss */
+.imageSide {
+  float: left;
+}
+
+/* line 69, /Users/macbookpro/Desktop/ecoMeal/app/assets/stylesheets/boxes.scss */
+.PMbox {
+  width: 140px;
+  margin-bottom: 20px;
+  margin-top: 20px;
+  border-radius: 300px;
+}
+
+/* line 77, /Users/macbookpro/Desktop/ecoMeal/app/assets/stylesheets/boxes.scss */
+.title {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  font-size: 35px;
+}
+
+/* line 83, /Users/macbookpro/Desktop/ecoMeal/app/assets/stylesheets/boxes.scss */
+.titleSub {
+  margin-top: 10px;
+  font-size: 30px;
+  color: #92c755;
+  margin-top: 30px;
+}
+
+/* line 90, /Users/macbookpro/Desktop/ecoMeal/app/assets/stylesheets/boxes.scss */
+.sub {
+  margin-bottom: 10px;
+}
+
+/* line 94, /Users/macbookpro/Desktop/ecoMeal/app/assets/stylesheets/boxes.scss */
+.boxImage {
+  width: 150px;
+  border-radius: 5px;
+}
+
+/* line 101, /Users/macbookpro/Desktop/ecoMeal/app/assets/stylesheets/boxes.scss */
+.productBox {
+  margin-bottom: 20px;
+  height: 172px;
+  border: 1px solid #9c9c9c;
+  padding: 10px;
+  box-shadow: 0 15px 35px rgba(50, 50, 93, 0.1), 0 5px 15px rgba(0, 0, 0, 0.07);
+}
+
+/* line 110, /Users/macbookpro/Desktop/ecoMeal/app/assets/stylesheets/boxes.scss */
+.big {
+  display: block;
+  cursor: pointer;
+}
+
+/* line 116, /Users/macbookpro/Desktop/ecoMeal/app/assets/stylesheets/boxes.scss */
+.radioG {
+  margin: 10px !important;
+}
+
+@media screen and (max-width: 768px) {
+  /* line 122, /Users/macbookpro/Desktop/ecoMeal/app/assets/stylesheets/boxes.scss */
+  .buttonBox {
+    border-radius: 4px 4px 0px 0px;
+  }
+
+  /* line 125, /Users/macbookpro/Desktop/ecoMeal/app/assets/stylesheets/boxes.scss */
+  .imageItems {
+    width: 180px;
+    height: 180px;
+    border: 1px solid black;
+    border-radius: 5px;
+    margin-top: 0px;
+    margin-bottom: 30px;
+  }
+
+  /* line 133, /Users/macbookpro/Desktop/ecoMeal/app/assets/stylesheets/boxes.scss */
+  .productBox {
+    height: 122px;
+  }
+
+  /* line 136, /Users/macbookpro/Desktop/ecoMeal/app/assets/stylesheets/boxes.scss */
+  .infoTitle {
+    font-size: 18px;
+  }
+
+  /* line 139, /Users/macbookpro/Desktop/ecoMeal/app/assets/stylesheets/boxes.scss */
+  .boxImage {
+    width: 100px;
+    border-radius: 5px;
+  }
+
+  /* line 143, /Users/macbookpro/Desktop/ecoMeal/app/assets/stylesheets/boxes.scss */
+  .infoSide {
+    margin-top: 5px;
+    margin-left: 147px;
+  }
+
+  /* line 148, /Users/macbookpro/Desktop/ecoMeal/app/assets/stylesheets/boxes.scss */
+  .PMbox {
+    width: 90px;
+  }
+
+  /* line 152, /Users/macbookpro/Desktop/ecoMeal/app/assets/stylesheets/boxes.scss */
+  .productSec {
+    padding-left: 0px;
+    padding-right: 0px;
+  }
+
+  /* line 157, /Users/macbookpro/Desktop/ecoMeal/app/assets/stylesheets/boxes.scss */
+  .productPods {
+    padding-left: 0px;
+    padding-right: 0px;
+  }
+
+  /* line 162, /Users/macbookpro/Desktop/ecoMeal/app/assets/stylesheets/boxes.scss */
+  .sec1 {
+    padding-left: 0px;
+    padding-right: 0px;
+  }
+
+  /* line 167, /Users/macbookpro/Desktop/ecoMeal/app/assets/stylesheets/boxes.scss */
+  .titleSub {
+    margin-top: 10px;
+    font-size: 25px;
+    color: #92c755;
+    margin-top: 12px;
+  }
+}

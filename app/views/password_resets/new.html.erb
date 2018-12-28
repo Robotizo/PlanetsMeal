@@ -1,0 +1,38 @@
+<%= stylesheet_link_tag "password_resets", :media => "all" %>
+<% if notice %>
+  <div class="alert alert-custom fade in alert-dismissable show" style="margin-top:18px;">
+   <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+      <span aria-hidden="true" style="font-size:20px">×</span>
+    </button>  <%= notice %>
+  </div>
+ <% end %>
+
+
+
+<%= form_tag password_resets_path, :method => :post do %>
+
+
+<div class="container">
+
+<div class="heda"><head>Password Reset</head></div>
+<div class="subheda"><head>Please enter your email to receive password reset instructions.</head></div>
+<div class="text-center">
+<div class="col-md-6 col-md-offset-3">
+	<%= form_tag password_resets_path, :method => :post do %>
+	  <div class="inp">
+	    <%= text_field_tag :email, params[:email], placeholder: "Email", class: "fieldEmail form-control" %>
+	  </div>
+	  <div class="logg">
+	  	<%= submit_tag "Send Email", method: :get, class: "btn btn-primary resetBew" %>
+	  </div>
+	<% end %>
+</div>
+</div>
+
+
+</div>
+
+
+
+
+<% end %>

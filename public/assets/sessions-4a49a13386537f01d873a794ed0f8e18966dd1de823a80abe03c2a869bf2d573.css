@@ -1,0 +1,89 @@
+/*// Place all the styles related to the Sessions controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/*/
+/* line 9, /Users/macbookpro/Desktop/ecoMeal/app/assets/stylesheets/sessions.scss */
+.loginField {
+  margin-bottom: 30px;
+}
+
+/* line 13, /Users/macbookpro/Desktop/ecoMeal/app/assets/stylesheets/sessions.scss */
+.alert-custom {
+  background-color: #92c755;
+  color: #fff;
+}
+
+/* line 18, /Users/macbookpro/Desktop/ecoMeal/app/assets/stylesheets/sessions.scss */
+#notice {
+  font-size: 50px;
+}
+
+/* line 22, /Users/macbookpro/Desktop/ecoMeal/app/assets/stylesheets/sessions.scss */
+.sessionTitle {
+  margin-top: 40px;
+  font-size: 40px;
+  text-align: center;
+  margin-bottom: 40px;
+  color: #92c755;
+}
+
+/* line 30, /Users/macbookpro/Desktop/ecoMeal/app/assets/stylesheets/sessions.scss */
+.emailField {
+  margin-bottom: 30px;
+}
+
+/* line 35, /Users/macbookpro/Desktop/ecoMeal/app/assets/stylesheets/sessions.scss */
+.form-control {
+  height: 50px;
+  border-radius: 10px;
+  font-size: 20px;
+}
+
+/* line 41, /Users/macbookpro/Desktop/ecoMeal/app/assets/stylesheets/sessions.scss */
+.titleForms {
+  font-size: 25px;
+  margin-bottom: 10px;
+}
+
+/* line 46, /Users/macbookpro/Desktop/ecoMeal/app/assets/stylesheets/sessions.scss */
+.loginSec {
+  margin-top: 30px;
+}
+
+/* line 50, /Users/macbookpro/Desktop/ecoMeal/app/assets/stylesheets/sessions.scss */
+.signIn {
+  width: 100%;
+  background-color: #92c755;
+  height: 50px;
+}
+
+/* line 56, /Users/macbookpro/Desktop/ecoMeal/app/assets/stylesheets/sessions.scss */
+.signIn:hover {
+  width: 100%;
+  background-color: #92c755;
+}
+
+/* line 62, /Users/macbookpro/Desktop/ecoMeal/app/assets/stylesheets/sessions.scss */
+.signIn:focus {
+  width: 100%;
+  background-color: #92c755;
+}
+
+/* line 68, /Users/macbookpro/Desktop/ecoMeal/app/assets/stylesheets/sessions.scss */
+.signIn:active {
+  width: 100%;
+  background-color: #92c755;
+}
+
+/* line 75, /Users/macbookpro/Desktop/ecoMeal/app/assets/stylesheets/sessions.scss */
+.signUpSec {
+  margin-top: 20px;
+  font-size: 20px;
+  text-align: center;
+}
+
+@media screen and (max-width: 768px) {
+  /* line 83, /Users/macbookpro/Desktop/ecoMeal/app/assets/stylesheets/sessions.scss */
+  .sessionTitle {
+    font-size: 30px;
+  }
+}

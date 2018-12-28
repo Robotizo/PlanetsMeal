@@ -1,0 +1,225 @@
+/*// Place all the styles related to the Users controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/*/
+/* line 9, /Users/macbookpro/Desktop/ecoMeal/app/assets/stylesheets/users.scss */
+#orderInfo {
+  margin-top: 20px;
+}
+
+/* line 14, /Users/macbookpro/Desktop/ecoMeal/app/assets/stylesheets/users.scss */
+.statsTitleDiff {
+  margin-top: 50px;
+  font-size: 25px;
+}
+
+/* line 19, /Users/macbookpro/Desktop/ecoMeal/app/assets/stylesheets/users.scss */
+.ordersButton {
+  width: 100%;
+  height: 50px;
+  padding: 0px !important;
+  outline: none !important;
+  margin-top: 20px;
+  border: 1px solid #d2d2d2;
+}
+
+/* line 29, /Users/macbookpro/Desktop/ecoMeal/app/assets/stylesheets/users.scss */
+.wholeSec {
+  margin-bottom: 50px;
+}
+
+/* line 33, /Users/macbookpro/Desktop/ecoMeal/app/assets/stylesheets/users.scss */
+.logOut {
+  margin-left: 10px;
+}
+
+/* line 39, /Users/macbookpro/Desktop/ecoMeal/app/assets/stylesheets/users.scss */
+.signIn {
+  width: 100%;
+  background-color: #92c755;
+  height: 50px;
+  padding: 0px 0px !important;
+}
+
+/* line 46, /Users/macbookpro/Desktop/ecoMeal/app/assets/stylesheets/users.scss */
+.signIn:hover {
+  width: 100%;
+  background-color: #92c755;
+}
+
+/* line 52, /Users/macbookpro/Desktop/ecoMeal/app/assets/stylesheets/users.scss */
+.signIn:focus {
+  width: 100%;
+  background-color: #92c755;
+}
+
+/* line 58, /Users/macbookpro/Desktop/ecoMeal/app/assets/stylesheets/users.scss */
+.signIn:active {
+  width: 100%;
+  background-color: #92c755;
+}
+
+/* line 63, /Users/macbookpro/Desktop/ecoMeal/app/assets/stylesheets/users.scss */
+.form-control {
+  height: 40px;
+}
+
+/* line 67, /Users/macbookpro/Desktop/ecoMeal/app/assets/stylesheets/users.scss */
+.passField {
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+/* line 72, /Users/macbookpro/Desktop/ecoMeal/app/assets/stylesheets/users.scss */
+.sessionTitle {
+  margin-top: 40px;
+  font-size: 40px;
+  text-align: center;
+  margin-bottom: 40px;
+  color: #92c755;
+}
+
+/* line 81, /Users/macbookpro/Desktop/ecoMeal/app/assets/stylesheets/users.scss */
+.titleForms {
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+
+/* line 86, /Users/macbookpro/Desktop/ecoMeal/app/assets/stylesheets/users.scss */
+.dropdown-menu {
+  padding: 11px 0;
+}
+
+/* line 89, /Users/macbookpro/Desktop/ecoMeal/app/assets/stylesheets/users.scss */
+.btn {
+  display: inline-block;
+  margin-bottom: 0;
+  font-weight: normal;
+  text-align: center;
+  vertical-align: middle;
+  touch-action: manipulation;
+  cursor: pointer;
+  background-image: none;
+  border: 1px solid black;
+  white-space: nowrap;
+  padding: 0px 12px;
+  padding-top: 10px;
+  font-size: 14px;
+  line-height: 1.428571429;
+  border-radius: 4px;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+/* line 110, /Users/macbookpro/Desktop/ecoMeal/app/assets/stylesheets/users.scss */
+.userOps {
+  font-size: 22px;
+}
+
+/* line 114, /Users/macbookpro/Desktop/ecoMeal/app/assets/stylesheets/users.scss */
+i {
+  border: solid black;
+  border-width: 0 3px 3px 0;
+  display: inline-block;
+  padding: 5px;
+  margin-bottom: 3px;
+}
+
+/* line 122, /Users/macbookpro/Desktop/ecoMeal/app/assets/stylesheets/users.scss */
+.down {
+  transform: rotate(45deg);
+  -webkit-transform: rotate(45deg);
+}
+
+/* line 127, /Users/macbookpro/Desktop/ecoMeal/app/assets/stylesheets/users.scss */
+.userSets {
+  margin-top: 50px;
+}
+
+/* line 133, /Users/macbookpro/Desktop/ecoMeal/app/assets/stylesheets/users.scss */
+.ecoStats {
+  margin-top: 70px;
+  margin-bottom: 80px;
+}
+
+/* line 140, /Users/macbookpro/Desktop/ecoMeal/app/assets/stylesheets/users.scss */
+.healthStats {
+  margin-top: 20px;
+}
+
+/* line 146, /Users/macbookpro/Desktop/ecoMeal/app/assets/stylesheets/users.scss */
+.userName {
+  font-size: 30px;
+}
+
+/* line 151, /Users/macbookpro/Desktop/ecoMeal/app/assets/stylesheets/users.scss */
+.statsTitle {
+  margin-top: 50px;
+  font-size: 25px;
+  border-bottom: 1px solid #bdbdbd;
+}
+
+/* line 157, /Users/macbookpro/Desktop/ecoMeal/app/assets/stylesheets/users.scss */
+.statSub {
+  font-size: 20px;
+  text-align: center;
+  margin-top: 10px;
+}
+
+/* line 163, /Users/macbookpro/Desktop/ecoMeal/app/assets/stylesheets/users.scss */
+.statSide1 {
+  border-left: 0px solid #bdbdbd;
+  border-right: 0px solid #bdbdbd;
+  margin-top: 30px;
+}
+
+/* line 170, /Users/macbookpro/Desktop/ecoMeal/app/assets/stylesheets/users.scss */
+.statSide2 {
+  border-left: 1px solid #bdbdbd;
+  border-right: 1px solid #bdbdbd;
+  margin-top: 30px;
+  padding-bottom: 30px;
+}
+
+/* line 178, /Users/macbookpro/Desktop/ecoMeal/app/assets/stylesheets/users.scss */
+.statSide3 {
+  border-left: 0px solid #bdbdbd;
+  border-right: 0px solid #bdbdbd;
+  margin-top: 30px;
+}
+
+/* line 186, /Users/macbookpro/Desktop/ecoMeal/app/assets/stylesheets/users.scss */
+.statsInfo {
+  text-align: center;
+  margin-top: 50px;
+  font-size: 30px;
+}
+
+@media screen and (max-width: 768px) {
+  /* line 194, /Users/macbookpro/Desktop/ecoMeal/app/assets/stylesheets/users.scss */
+  .statsTitle {
+    font-size: 20px;
+  }
+
+  /* line 197, /Users/macbookpro/Desktop/ecoMeal/app/assets/stylesheets/users.scss */
+  .statsInfo {
+    font-size: 18px;
+    text-align: center;
+    margin-bottom: 50px;
+    margin-top: 20px;
+  }
+
+  /* line 203, /Users/macbookpro/Desktop/ecoMeal/app/assets/stylesheets/users.scss */
+  .healthStats {
+    padding-left: 0px;
+    padding-right: 0px;
+  }
+
+  /* line 207, /Users/macbookpro/Desktop/ecoMeal/app/assets/stylesheets/users.scss */
+  .statSide1 {
+    padding-left: 0px;
+    padding-right: 0px;
+    margin-top: 20px;
+  }
+}
