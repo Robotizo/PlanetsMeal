@@ -26,30 +26,7 @@
 
 
 
-  <div class="col-md-12 boxDisp">
-  <div class="displayStatsTitle">
-    <div class="titleStats">Planet's Meal Box</div>
-    <div class="titleStats">Get all you need in one meal box.</div>
-  </div>
 
-  <div class="col-md-12 processSec text-center">
-    <div class="col-md-4 col-xs-4 ">
-      <div class="proCont">Dairy free ice cream</div>
-      <span class="popup" data-popuptext="Get a delicious ice desert"><%= image_tag("popsicle.png", class: "PMbox" )%></span>
-    </div>
-    <div class="col-md-4 col-xs-4 setMiddle">
-      <div class="proCont">Main meal</div>
-      <span class="popup" data-popuptext="Choose your main course"><%= image_tag("meal.png", class: "PMbox") %></span>
-    </div>
-    <div class="col-md-4 col-xs-4">
-      <div class="proCont">Fruit</div>
-      <span class="popup" data-popuptext="Hand pick your favorite fruit"><%= image_tag("fruit.png", class: "PMbox" ) %></span>
-    </div>
-    <div class="displayStatsTitle col-md-12 col-xs-12">
-      <div class="titleStats">Starting at $6.99</div>
-    </div>
-  </div>
-</div>
 
 
 
@@ -64,22 +41,22 @@
     <div class="col-md-3 col-xs-6 ">
       <div class="titleMob">Water</div>
       <%= image_tag("water.png", class: "miniIcon") %>
-      <div class="titleMob"><%= @users.sum(:user_water) %> l</div>
+      <div class="titleMob">782 l</div>
     </div>
     <div class="col-md-3 col-xs-6">
       <div class="titleMob">Land</div>
       <%= image_tag("tree.png", class: "miniIcon") %>
-      <div class="titleMob"><%= @users.sum(:user_land) %> m<sup>2</sup></div>
+      <div class="titleMob">241 m<sup>2</sup></div>
     </div>
     <div class="col-md-3 col-xs-6 statCells">
       <div class="titleMob">Carbon</div>
       <%= image_tag("carbon.png", class: "miniIconCarbon") %>
-      <div class="titleMob"><%= @users.sum(:user_carbon) %> kg</div>
+      <div class="titleMob">783 kg</div>
     </div>
     <div class="col-md-3 col-xs-6 statCells">
       <div class="titleMob">Animal Lives</div>
       <%= image_tag("lives.png", class: "miniIconLives") %>
-      <div class="titleMob"><%= @users.sum(:user_lives) %></div>
+      <div class="titleMob">358</div>
     </div>
     <div class="buttonSec">
       <button class= "btn ecoStatsButton">
