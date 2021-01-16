@@ -13,9 +13,9 @@
 ActiveRecord::Schema.define(version: 20181006235818) do
 
   create_table "boxes", force: :cascade do |t|
+    t.integer  "product_id"
     t.datetime "created_at",                          null: false
     t.datetime "updated_at",                          null: false
-    t.integer  "product_id"
     t.integer  "user_id"
     t.decimal  "box_price",  precision: 10, scale: 2
   end
@@ -38,8 +38,6 @@ ActiveRecord::Schema.define(version: 20181006235818) do
     t.datetime "created_at",   null: false
     t.datetime "updated_at",   null: false
     t.string   "order_status"
-    t.integer  "box_id"
-    t.index ["box_id"], name: "index_orders_on_box_id"
   end
 
   create_table "products", force: :cascade do |t|
